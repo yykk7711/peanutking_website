@@ -1,0 +1,303 @@
+/* * {
+  overflow-x: hidden;
+  padding: 0px !important;
+  margin: 0px !important;
+} */
+
+
+/* .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* index page -----------------------------------------------------------------*/
+h5{
+  font-weight: Bold;
+}
+
+h4{
+  font-weight: Bold;
+}
+
+
+#navDivOverlap{
+  position: absolute;
+  z-index: 10;
+}
+
+#navDiv{
+  background-color: "black"
+}
+
+#subNav{
+  position: absolute;
+  width: 100%;
+  margin-top: 60px;
+  z-index: 10;
+  background-color: rgba(0,0,0,0);;
+}
+
+
+
+.captionJoinUs {
+  position: absolute;
+  z-index: 10;
+  /* transform: translateY(-50%); */
+  top: 300px;
+  width: 100%;
+  font-family: Montserrat;
+  font-weight: 900;
+  color: rgba(250,250,250,1);
+}
+
+/* .captionText{
+  color: rgba(0,0,0,1);
+} */
+
+/* #carouselExampleIndicators {
+  height: 500px;
+  opacity: 1;
+  overflow: hidden;
+} */
+
+.sectionDiv{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Montserrat;
+}
+
+.V1_Title {
+  color: rgba(0,0,0,1);
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 1;
+  text-align: center;
+}
+
+.v1_1 {
+  color: rgba(0,0,0,0.800000011920929);
+  font-family: Montserrat;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+
+
+.productDiv{
+  background: rgba(250,250,250,1);
+}
+.productText {
+  color: rgba(0,0,0,0.800000011920929);
+  font-family: Montserrat;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+}
+.productImg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  opacity: 1;
+}
+
+
+/* .blogBlock{
+
+} */
+/* Blog title */
+.blogTitle {
+  color: rgba(0,0,0,0.800000011920929);
+  font-family: Montserrat;
+  font-weight: Bold;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+  padding-top: 20px;
+}
+/* Blog content */
+.blogContent {
+  color: rgba(0,0,0,0.800000011920929);
+  font-family: Montserrat;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: center;
+}
+.blogImg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  /* text-align: center;
+  align-items: center; */
+  opacity: 1;
+  /* overflow: hidden; */
+}
+
+#learnMore {
+  margin-left: auto;
+  margin-right: auto;
+  /* color: rgba(47,128,237,1); */
+  font-family: Montserrat;
+  /* font-weight: Medium;
+  font-size: 15px; */
+  opacity: 1;
+  text-align: center;
+}
+
+
+
+
+
+/* footer */
+#footerLink{
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+.footerCopyright{
+  font-family: Montserrat;
+  /* font-style: normal;
+  font-weight: normal; */
+  font-size: 12px;
+  /* identical to box height, or 114% */
+/*   
+  text-align: center;
+  letter-spacing: -0.015em; */
+}
+
+
+
+/* product page -----------------------------------------------------------------*/
+.banner {
+  padding: 400px 0 10px;
+  text-align: center;
+  font-family: Montserrat;
+  color: rgba(255,255,255,0.800000011920929);
+  background: url(../images/v29_687.png) 50% 0 no-repeat fixed;
+
+  background-size: cover;
+  background-attachment: initial;
+  background-origin: initial;
+  background-position: center;
+}
+
+
+.productFeatureDiv {
+  padding-top: 40px;
+  font-family: Montserrat;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.productFeatureText {
+  padding-top: 30px;
+}
+
+.productFeatureImg {
+  object-fit: contain;
+  width: 100%;
+  opacity: 1;
+}
+
+.productDescriptionDiv {
+  padding-top: 20px;
+  /* height: 80%; */
+}
+
+.productDescriptionText {
+  padding-top: 5%;
+}
+
+.productDescriptionImg {
+  object-fit: cover;
+  width: 100%;
+  opacity: 1;
+}
+
+
+/* education page -----------------------------------------------------------------*/
+.educationBanner{
+  height:  470px;
+  text-align: center;
+  font-family: Montserrat;
+  background: url('../images/v29_600.png') no-repeat fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  /* padding: auto; */
+  margin-top: auto;
+  margin-bottom: auto;
+  /* background-position: center; */
+  background-attachment: initial;
+}
+
+.educationBanner .title{
+  padding-top: 270px;
+  padding-left: 20%;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: Bold;
+  color: white;
+}
+
+.edu-v3-text{
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+}
+
+.eduEquipmentBlock{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: lightgrey;
+}
+
+
+
+/* about us page -----------------------------------------------------------------*/
+
+.aboutusBanner{
+  height:  550px;
+  text-align: center;
+  font-family: Montserrat;
+  background: url('../images/v201_585.png') no-repeat fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  /* padding: auto; */
+  margin-top: auto;
+  margin-bottom: auto;
+  /* background-position: center; */
+  background-attachment: initial;
+}
+
+
+
+.imgBtn{
+  background-color: transparent;
+  border-color: #007bff;
+  border-radius: 5px;
+  border-style: solid;
+  box-shadow: 0;
+}
+
+.imgBtn:hover {
+  background-color: #e1efff;
+  /* border: 0;  */
+}
+
+.imgBtn:focus {
+  background-color: #cee2fa;
+  /* border: 0;  */
+}
