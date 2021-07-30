@@ -189,6 +189,7 @@ h4{
   background-attachment: initial;
   background-origin: initial;
   background-position: center;
+  z-index: auto;
 }
 
 
@@ -281,6 +282,7 @@ h4{
   margin-bottom: auto;
   /* background-position: center; */
   background-attachment: initial;
+  background-color: transparent;
 }
 
 
@@ -301,4 +303,12 @@ h4{
 .imgBtn:focus {
   background-color: #cee2fa;
   /* border: 0;  */
+}
+
+/* nav bar -----------------------------------------------------------------*/
+.dropdown-item {
+  z-index: 1001;
+}
+.dropdown-menu{
+  z-index: 1001;
 }
