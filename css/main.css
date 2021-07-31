@@ -127,6 +127,7 @@ h4{
   text-align: center;
 }
 .productImg {
+  padding-top: -10px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -260,13 +261,14 @@ h4{
 }
 
 .productDescriptionDiv {
-  padding-top: 20px;
+  padding-top: 30px;
   /* height: 80%; */
 }
 
 .productDescriptionText {
   padding-top: 5%;
 }
+
 
 .productDescriptionImg {
   object-fit: cover;
@@ -353,4 +355,23 @@ h4{
 /* nav bar -----------------------------------------------------------------*/
 .navbar-collapse{
   z-index: 100;
+}
+
+.about-us{
+  position: relative;
+  top:-180px;
+  left:50px;
+  width:50%;
+  font-size: 500%;
+  font-weight:bold;
+}
+
+.slogan{
+  font-size: 200%;
+  color: grey;
+  text-align:center;
+}
+
+.sloganTextDiv {
+  padding-top: 3.5%;
 }
