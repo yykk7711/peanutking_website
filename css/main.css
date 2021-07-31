@@ -126,6 +126,7 @@ h4{
   margin-right: auto;
   width: 100%;
   opacity: 1;
+  object-fit: contain;
 }
 
 
