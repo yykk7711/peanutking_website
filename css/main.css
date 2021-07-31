@@ -139,8 +139,9 @@ h4{
   margin-left: auto;
   margin-right: auto;
   height: 100px;
-  width: 100px;
+  width: 300px;
   opacity: 1;
+  object-fit: contain;
 }
 
 .blogTitle {
