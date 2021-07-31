@@ -11,7 +11,45 @@
   margin-right: auto;
 } */
 
+
 /* index page -----------------------------------------------------------------*/
+.sectionDivFirst{
+  padding-bottom: 20px;
+  font-family: Montserrat;
+}
+
+.captionJoinUs {
+  position: relative;
+  z-index: 10;
+  /* transform: translateY(-50%); */
+  top: 200px;
+  left: 50px;
+  width: 100%;
+  font-family: Montserrat;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.captionText{
+  position: static;
+  top: 300px;
+}
+
+.homeBanner{
+  height:  700px;
+  text-align: center;
+  font-family: Montserrat;
+  /* background: url('../images/v201_585.png') no-repeat fixed; */
+  background-attachment: fixed;
+  background-size: cover;
+  /* padding: auto; */
+  margin-top: auto;
+  margin-bottom: auto;
+  /* background-position: center; */
+  background-attachment: initial;
+}
+
 h5{
   font-weight: Bold;
 }
@@ -38,22 +76,6 @@ h4{
   background-color: rgba(0,0,0,0);;
 }
 
-
-
-.captionJoinUs {
-  position: absolute;
-  z-index: 10;
-  /* transform: translateY(-50%); */
-  top: 300px;
-  width: 100%;
-  font-family: Montserrat;
-  font-weight: 900;
-  color: rgba(250,250,250,1);
-}
-
-/* .captionText{
-  color: rgba(0,0,0,1);
-} */
 
 /* #carouselExampleIndicators {
   height: 500px;
@@ -111,6 +133,15 @@ h4{
 
 } */
 /* Blog title */
+
+.clientsImg {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
+  opacity: 1;
+}
+
 .blogTitle {
   color: rgba(0,0,0,0.800000011920929);
   font-family: Montserrat;
@@ -281,7 +312,6 @@ h4{
   margin-bottom: auto;
   /* background-position: center; */
   background-attachment: initial;
-  background-color: transparent;
 }
 
 
