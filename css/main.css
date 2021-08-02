@@ -99,7 +99,7 @@ h4{
   color: rgba(0,0,0,1);
   font-family: Montserrat;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
   opacity: 1;
@@ -142,7 +142,7 @@ h4{
 } */
 /* Blog title */
 .iconRow{
-  
+
 }
 
 .clientsImg {
@@ -357,8 +357,29 @@ h4{
 }
 
 /* nav bar -----------------------------------------------------------------*/
+.text-left{
+  padding-left: 30px;
+}
+
 .navbar-collapse{
+  height: 200px:
   z-index: 100;
+}
+.navbar-expand-lg{
+  height: 100px;
+}
+
+.navbarContainer{
+  padding-right: 10px;
+}
+
+.navbar-social-media{
+  margin-right: 10px;
+}
+
+.social_media_icon{
+  height : 25px;
+  width : 25px;
 }
 
 .about-us{
@@ -378,4 +399,8 @@ h4{
 
 .sloganTextDiv {
   padding-top: 3.5%;
+}
+
+.social-media-icon{
+
 }
