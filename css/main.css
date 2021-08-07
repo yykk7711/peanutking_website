@@ -62,16 +62,25 @@ h4{
 
 #navBar{
   position: relative;
+  z-index: 1001;
+  position: relative;
+  overflow: visible;
 }
 
 #navDivOverlap{
   position: absolute;
   z-index: 1000;
+  z-index: 1001;
+  position: relative;
+  overflow: visible;
 }
 
 
 #navDiv{
-  background-color: "black"
+  background-color: "black";
+  z-index: 1001;
+  position: relative;
+  overflow: visible;
 }
 
 #subNav{
@@ -128,7 +137,16 @@ h4{
   text-align: center;
 }
 .productImg {
-  padding-top: -10px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  object-fit: contain;
+}
+
+.websiteLogo {
+  padding-top: 20px;
+  margin-top: -20px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -265,7 +283,7 @@ h4{
 }
 
 .productDescriptionDiv {
-  padding-top: 30px;
+  padding-top: 20px;
   /* height: 80%; */
 }
 
@@ -362,15 +380,23 @@ h4{
 }
 
 .navbar-collapse{
-  height: 200px:
-  z-index: 100;
+  height: 200px;
+  z-index: 1001;
+  position: relative;
+  overflow: visible;
 }
 .navbar-expand-lg{
   height: 100px;
+  z-index: 1001;
+  position: relative;
+  overflow: visible;
 }
 
 .navbarContainer{
   padding-right: 10px;
+  z-index: 1001;
+  position: relative;
+  overflow: visible;
 }
 
 .navbar-social-media{
@@ -403,4 +429,14 @@ h4{
 
 .social-media-icon{
 
+}
+
+.dropdown-toggle{
+  z-index: 10000;
+  position: relative;
+  overflow: visible;
+}
+
+.iframe1{
+  overflow: visible;
 }
