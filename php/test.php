@@ -1,8 +1,8 @@
 <?php
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+use vendor\PHPMailer\PHPMailer\src\PHPMailer;
+use vendor\PHPMailer\PHPMailer\src\Exception;
 
 // If necessary, modify the path in the require statement below to refer to the
 // location of your Composer autoload.php file.
@@ -73,14 +73,14 @@ try {
     echo "Email not sent. {$mail->ErrorInfo}", PHP_EOL; //Catch errors from Amazon SES.
 }
 
-  // print_r($_POST);
-  // $name = $_POST['name'];
-  // $email = $_POST['email'];
-  // $to = 'alanngo7711@yahoo.com.hk';
-  // $body = "";
-  //
-  // $body .= "From: ".$name. "\r\n";
-  // $body .= "Email: ".$email. "\r\n";
-  //
-  // print_r(mail($to, "Testing purpose", $body));
+  print_r($_POST);
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $to = 'alanngo7711@yahoo.com.hk';
+  $body = "";
+
+  $body .= "From: ".$name. "\r\n";
+  $body .= "Email: ".$email. "\r\n";
+
+  print_r(mail($to, "Testing purpose", $body));
 ?>
