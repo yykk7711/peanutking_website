@@ -659,7 +659,6 @@ h4{
     width: auto;
 }
 
-
 .overview{
   position: relative;
   margin: auto;
@@ -702,6 +701,7 @@ h4{
 .ser_photo{
   max-width: 99%;
   max-height: 99%;
+  padding-left: 30px;
 }
 .ser_brief{
   padding-bottom: 50px;
