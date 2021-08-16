@@ -10,6 +10,11 @@
   margin-left: auto;
   margin-right: auto;
 } */
+*{
+ font-size: 100%;
+ font-family: Century Gothic;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -705,7 +710,6 @@ h4{
 }
 .ser_brief{
   padding-bottom: 50px;
-  color: #A52A2A;
 }
 .ser_target{
 }
