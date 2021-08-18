@@ -272,7 +272,7 @@ h4{
 
 /* product page -----------------------------------------------------------------*/
 .banner {
-  padding: 0px 0px 200px;
+  padding: 0px 0px 10%;
   text-align: center;
   font-family: Montserrat;
   color: rgba(255,255,255,0.800000011920929);
@@ -511,32 +511,25 @@ h4{
   color:#ddd;
 }
 
-/* .pilaOverview1{
-  width: auto;
-  height: 800px;
-  text-align: center;
-  font-family: Montserrat;
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/v201_585.png') no-repeat fixed;
-  background-attachment: fixed;
-  background-size: cover;
-
-  margin-top: auto;
-  margin-bottom: auto;
-
-  background-attachment: initial;
-  position: relative;
-} */
-
-.pilaOverview1{
+.pilaAdv{
   width:auto;
   height: auto;
   text-align: center;
   font-family: Montserrat;
-  background-color: rgba(135,206,250);
+  background-color: #fff;
+  color:black;
 }
 
+.pilaFeature1{
+  width:auto;
+  height: auto;
+  text-align: center;
+  font-family: Montserrat;
+  background-color: #333;
+  background: linear-gradient(135deg, #000 0%, #797979 100%);  opacity: 0.95;
+}
 
-.pilaOverview2{
+/* .pilaOverview3{
   width: auto;
   height: 800px;
   text-align: center;
@@ -544,78 +537,60 @@ h4{
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/v30_295.png') no-repeat fixed;
   background-attachment: fixed;
   background-size: cover;
-  /* padding: auto; */
   margin-top: auto;
   margin-bottom: auto;
-  /* background-position: center; */
   background-attachment: initial;
   position: relative;
-}
+} */
 
-.pilaOverview3{
-  width: auto;
-  height: 800px;
+.pilaFeature2{
+  width:auto;
+  height: auto;
   text-align: center;
   font-family: Montserrat;
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/v30_295.png') no-repeat fixed;
-  background-attachment: fixed;
-  background-size: cover;
-  /* padding: auto; */
-  margin-top: auto;
-  margin-bottom: auto;
-  /* background-position: center; */
-  background-attachment: initial;
-  position: relative;
+  background: rgba(0, 202, 255, 1);
+  background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%, rgba(0, 202, 255, 1) 100%);  opacity: 0.95;
 }
 
-.pilaOverview4{
-  width: auto;
-  height: 800px;
+.pilaFeature3{
+  width:auto;
+  height: auto;
   text-align: center;
   font-family: Montserrat;
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/v30_295.png') no-repeat fixed;
-  background-attachment: fixed;
-  background-size: cover;
-  /* padding: auto; */
-  margin-top: auto;
-  margin-bottom: auto;
-  /* background-position: center; */
-  background-attachment: initial;
-  position: relative;
+  background: #3d7a37;
+  background: linear-gradient(135deg, #c86f1a 0%, #c64dd1 100%);  opacity: 0.95;
 }
 
 .productTitle{
   position: relative;
-  top:250px;
-  left:0px;
-  font-size: 500%;
+  padding-top: 8%;
+  font-size: 3vw;
   font-weight:bold;
 }
 
 .productDes{
   position: relative;
-  top:150px;
-  left:0px;
-  font-size: 200%;
-  font-weight: lighter;
+  padding-top: 20%;
+  font-size: 2vw;
+  /* font-weight: lighter; */
 }
 
 .productSpec{
   background-color: #333;
   height: auto;
-  padding: 100px;
+  padding: 17%;
   color: #fff;
 }
 
 .productSpecTitle{
-  font-size: 240%;
+  font-size: 2vw;
   font-weight: bold;
 }
 
 .productSpecDes{
   color: #ccc;
-  padding-top:10px;
-  font-size: 120%
+  /* padding-top:10px; */
+  font-size: 1vw;
 }
 
 .productDl{
