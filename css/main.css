@@ -589,20 +589,20 @@ h4{
 }
 
 .productDl{
-  height:800px;
-  padding: 100px;
-  background-color: #87CEFA;
+  height:auto;
+  padding: 10%;
+  background-color: #fff;
   color: #333
 }
 
 .productDlTitle{
-  font-size: 240%;
+  font-size: max(2vw,30px);
   font-weight: bold;
 }
 
 .productDlDes{
-  padding-top:10px;
-  font-size: 120%
+  /* padding-top:10px; */
+  font-size: max(1.5vw,20px);
 }
 
 /* services page-----------------------------------------------------------------*/
