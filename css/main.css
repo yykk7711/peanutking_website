@@ -573,19 +573,19 @@ h4{
 .productSpec{
   background-color: #333;
   height: auto;
-  padding: 17%;
+  padding: 10%;
   color: #fff;
 }
 
 .productSpecTitle{
-  font-size: 2vw;
+  font-size: max(2vw,30px);
   font-weight: bold;
 }
 
 .productSpecDes{
   color: #ccc;
   /* padding-top:10px; */
-  font-size: 0.8vw;
+  font-size: max(1.5vw,20px);
 }
 
 .productDl{
