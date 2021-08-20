@@ -243,6 +243,7 @@ h4{
   /* text-align: center;
   align-items: center; */
   opacity: 1;
+  border-radius: 8px;
   /* overflow: hidden; */
 }
 
