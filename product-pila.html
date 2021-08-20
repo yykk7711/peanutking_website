@@ -99,9 +99,9 @@
       </div>
       <div class="col" style="text-align:right;">
         <nav>
-        <a href="#overview" class="productBookmarks">Overview</a> |
-        <a href="#spec" class="productBookmarks">Spec</a> |
-        <a href="#download" class="productBookmarks">Download</a>
+        <button type="button" href="" class="productBookmarks" onclick="functionforscroll('overview')">Overview</button> |
+        <button type="button" href="" class="productBookmarks" onclick="functionforscroll('spec')">Spec</button> |
+        <button type="button" href="" class="productBookmarks" onclick="functionforscroll('download')">Download</button>
       </nav>
       </div>
     </div>
@@ -249,6 +249,16 @@
     </div>
   </div>
 
-  <iframe id="footerDiv" src="footer.html" width="100%" height="300px" scrolling="no" frameborder="no" allowTransparency="true"></iframe>
+  <iframe id="footerDiv" src="footer.html" width="100%" height="300px" scrolling="no" frameborder="no" allowTransparency="true">
+  </iframe>
+
+<script>
+  var functionforscroll = function(id){
+    var reqId = "#"+id;
+    window.scrollTo(0, $(reqId).offset().top);
+    return false;
+  }
+</script>
+
 </body>
 </html>

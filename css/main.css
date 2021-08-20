@@ -504,7 +504,7 @@ h4{
   padding: 12px 5% 12px;
   /* margin: 0; */
 }
-
+/*
 .productBookmarks:link{
   color:#ddd;
 }
@@ -519,6 +519,17 @@ h4{
 
 .productBookmarks:active{
   color:#ddd;
+} */
+
+.productBookmarks{
+  background-color: #333;
+  color: #ddd;
+  text-decoration: none;
+  display:contents;
+}
+
+.productBookmarks:hover{
+  text-decoration: underline;
 }
 
 .pilaAdv{
