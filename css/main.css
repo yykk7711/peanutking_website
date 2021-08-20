@@ -189,10 +189,10 @@ h4{
   object-fit: contain;
 }
 
-
-/* .blogBlock{
-
-} */
+.blogBlock{
+  margin-left: 70px;
+  margin-right: 70px;
+}
 /* Blog title */
 .iconRow{
 
@@ -201,8 +201,8 @@ h4{
 .clientsImg {
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
-  width: 150px;
+  height: 300px;
+  width: 225px;
   opacity: 1;
   object-fit: contain
 }
@@ -230,7 +230,7 @@ h4{
   color: rgba(0,0,0,0.800000011920929);
   font-family: Montserrat;
   font-weight: Regular;
-  font-size: 14px;
+  font-size: 16px;
   opacity: 1;
   text-align: center;
 }
@@ -246,7 +246,14 @@ h4{
   border-radius: 8px;
   /* overflow: hidden; */
 }
-
+.Achievements_container{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.achievement_items{
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
 #learnMore {
   margin-left: auto;
   margin-right: auto;
@@ -628,16 +635,19 @@ h4{
   opacity: 1;
   transform: translate(0, 0);
 }
+
 .sectionDivEdu{
   height:100vh;
 }
+
 .on-site-courses{
   font-size: 30px;
-  padding-left: 20px;
+  font-weight: normal;
 }
+
 .edu_title{
   font-size: 50px;
-  padding: 150px;
+  padding: 20vh;
   margin: auto;
   font-weight: bold;
   color: #ADD8E6;
@@ -645,15 +655,17 @@ h4{
 }
 .edu_slogan{
   font-size: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  width: 50%;
+  padding-left: 5vh;
+  padding-bottom: 5vh;
+  width: 78%;
+  color: white;
+}
+.edu_img_div{
 }
 .edu_div_img{
-    max-height: 800px;
-    max-width: 800px;
-    height: auto;
-    width: auto;
+  width: 10vh;
+  height: auto;
+  object-fit: fill;
 }
 
 .overview{
