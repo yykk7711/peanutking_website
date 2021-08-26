@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 
 <head>
   <link rel="icon" href="./images/Logo2.png">
@@ -7,272 +7,265 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Navbar needed-->
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+
   <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-grid.min.css" rel="stylesheet">
-  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
   <link href="./css/main.css" rel="stylesheet" />
-
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
-  <script src="js/jquery.js"></script>
-
-  <title>Peanut King Solution Limited</title>
-
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="./script.js"></script>
+  <title>Peanut King Solution Limited | Home</title>
 </head>
 
-<body>
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" id="topbar">
-      <div class="container navbarContainer">
+<body style="background-color: transparent">
+  <header class="cd-main-header">
+    <a class="cd-logo" href="index.html"><img src="images/LOGO-BLACK.svg" alt="Logo" width="112.5" height="75" ></a>
 
-        <!-- ICON -->
-        <a class="navbar-brand" href="index.html" target="_top">
-          <img src="images/LOGO-BLACK.svg" width="115" height="76" alt="">
-        </a>
-
-        <!-- ITEMS -->
-        <div class="navbarItem" id="navbarSupportedContent">
-          <!-- <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">  -->
-          <ul class="navbar-nav flex-row ml-md-auto">
-            <!-- Nav items -->
-            <li class="nav-item">
-              <a class="nav-link" href="index.html" target="_top">HOME</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html" target="_top">ABOUT US</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                PRODUCTS & SERVICES
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="product-pila.html">Robot PILA</a>
-                <a class="dropdown-item" href="#">PeanutKING Edu Kit</a>
-                <a class="dropdown-item" href="#">Ai Bit</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="joinus.html" target="_top">JOIN US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html" target="_top">CONTACT US</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- SOCIAL MEDIA -->
-        <div class="navbar-social-media" id="navbarSupportedContent">
-          <ul class="navbar-nav flex-row ml-md-auto ">
-            <li class="nav-item">
-              <a href="https://www.facebook.com/peanut.king.hk" target="_blank">
-                <img class="social_media_icon" src="images/social_media/facebook.svg" >
-              </a>
-              <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
-                <img class="social_media_icon" src="images/social_media/instagram.svg">
-              </a>
-              <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
-                <img class="social_media_icon" src="images/social_media/linkedin.svg">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("topbar");
-        if (x.className == "navbar-expand-lg") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
+    <ul class="cd-header-buttons">
+      <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+    </ul> <!-- cd-header-buttons -->
   </header>
 
-  <div class="sectionDivFirst row" style="background: rgba(0, 202, 255, 1);
-   background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%,
-   rgba(255, 255, 255, 1) 100%);  opacity: 0.95; ">
-    <div class="captionJoinUs column">
-      <h1 class="captionText">
-        <p style="padding-left: 10vh; font-size: calc(17px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));">“An investment in </p>
-        <p style="padding-left: 20vh; font-size: calc(35px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); color: ;">KNOWLEDGE </p>
-        <p style="padding-left: 30vh; font-size: calc(17px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));">pays the best </p>
-        <p style="padding-left: 40vh; font-size: calc(35px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); color: ;">INTEREST.”</p></h1>
-      <!-- <a href="product.html" role="button" class="btn btn-primary">Learn More</a> -->
+  <main class="cd-main-content">
+    <div class="sectionDivFirst row" style="background: rgba(0, 202, 255, 1);
+	   background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%,
+	   rgba(255, 255, 255, 1) 100%);  opacity: 0.95; ">
+	    <div class="captionJoinUs column">
+	      <h1 class="captionText">
+	        <p class="cover_text1">“An investment in </p>
+	        <p class="cover_text2">KNOWLEDGE </p>
+	        <p class="cover_text3">pays the best </p>
+	        <p class="cover_text4">INTEREST.”</p></h1>
+	    </div>
+	    <img class="index-cover column" style="text-align: center;" src="images/home_page_car.png"></img>
     </div>
-    <img class="index-cover column" src="images/home_page_car.png"></img>
-  </div>
+	   <!-- Latest News -->
+	  <div class="sectionDiv">
+	    <div class="Achievements_container">
+	      <p class="V1_Title">LATEST NEWS</p>
+	      <div class="row" style="text-align: center;">
+	        <div class="col-md-4 achievement_items">
+	          <img class="blogImg" src="images/IT_lab.png" style="" alt="...">
+	          <p class="blogTitle">IT Innovation Lab in Schools</p>
+	          <p class="blogContent">We have been successfully helping schools in
+	            applying the "IT Lab" Funding to organise various STEM related
+	            activities including Robotic Soccer, AI and machine learning
+	            programmes. Contact us to know more.
+	          </p>
+	        </div>
+	        <div class="col-md-4 achievement_items">
+	          <img class="blogImg" src="images/v3_5.png" alt="...">
+	          <p class="blogTitle">International Tournaments</p>
+	          <p class="blogContent">Our students has once represented Hong Kong to join various International Contests</p>
+	        </div>
+	        <div class="col-md-4 achievement_items">
+	          <img class="blogImg" src="images/hku_event.jpg" alt="...">
+	          <p class="blogTitle">HKU Engineering Academy for Talented</p>
+	          <p class="blogContent">Over 70 local secondary school students joined
+	            the HKU summer STEM Robotics workshop, held in Inno-Wing, co-organised
+	             with the Department of EEE on 9-13 August, 2021. Students learnt coding
+	             and joined a mini- Line Following competition on the last day.</p>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
 
-<!-- Latest News -->
-  <div class="sectionDiv">
-    <div class="Achievements_container">
-      <p class="V1_Title">LATEST NEWS</p>
-      <div class="row" style="text-align: center;">
-        <div class="col-md-4 achievement_items">
-          <img class="blogImg" src="images/IT_lab.png" style="" alt="...">
-          <p class="blogTitle">IT Innovation Lab in Schools</p>
-          <p class="blogContent">We have been successfully helping schools in
-            applying the "IT Lab" Funding to organise various STEM related
-            activities including Robotic Soccer, AI and machine learning
-            programmes. Contact us to know more.
-          </p>
-        </div>
-        <div class="col-md-4 achievement_items">
-          <img class="blogImg" src="images/v3_5.png" alt="...">
-          <p class="blogTitle">International Tournaments</p>
-          <p class="blogContent">Our students has once represented Hong Kong to join various International Contests</p>
-        </div>
-        <div class="col-md-4 achievement_items">
-          <img class="blogImg" src="images/hku_event.jpg" alt="...">
-          <p class="blogTitle">HKU Engineering Academy for Talented</p>
-          <p class="blogContent">Over 70 local secondary school students joined
-            the HKU summer STEM Robotics workshop, held in Inno-Wing, co-organised
-             with the Department of EEE on 9-13 August, 2021. Students learnt coding
-             and joined a mini- Line Following competition on the last day.</p>
-        </div>
-        <!-- <div class="col-md-4 achievement_items">
-          <img class="blogImg" src="images/v3_7.png" alt="...">
-          <p class="blogTitle">Inter-school Workshops</p>
-          <p class="blogContent">We have vast of experience in helding Interschool Workshop, which introduces students
-            to the world of robotics</p>
-        </div> -->
-      </div>
-    </div>
-  </div>
+	  <!-- Achievements -->
+	  <div class="sectionDiv" style="text-align: center; background: rgba(0, 202, 255, 1); background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%, rgba(0, 202, 255, 1) 100%);  opacity: 0.95; ">
+	    <div class="Achievements_container">
+	      <p class="V1_Title" style="color: white;">ACHIEVEMENTS</p>
+	      <div class="row" style="text-align: center;">
+	        <div class="col-md-4 achievement_items">
+	          <img src="images/IMG_0142.JPG" class="img-responsive blogImg" alt="..." width="200" height="200">
+	          <div class="my-3">
+	            <h5 class="blogTitle" style="color: white;">Provide STEM Education to over 20 Schools</h5>
+	            <p class="blogContent" style="color: white;">Various courses as well as the materials required are tailor-made for each school.</p>
+	          </div>
+	        </div><!-- /.col-lg-4 -->
+	        <div class="col-md-4 achievement_items">
+	          <!-- <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg> -->
+	          <img src="images/IMG_2846.JPG" class="img-responsive blogImg" alt="..." width="200" height="200">
+	          <div class="my-3">
+	            <h5 class="blogTitle" style="color: white;">Team up with the experienced</h5>
+	            <p class="blogContent" style="color: white;">Our students has once represented Hong Kong to join various international contests</p>
+	          </div>
+	        </div><!-- /.col-lg-4 -->
+	        <div class="col-md-4 achievement_items">
+	          <!-- <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg> -->
+	          <img src="images/IMG_8061.jpg" class="img-responsive blogImg" alt="..." width="200" height="200">
+	          <div class="my-3">
+	            <h5 class="blogTitle" style="color: white; ">Annual Robotic Competition</h5>
+	            <p class="blogContent" style="color: white;">An annual robotic competition is held by us
+	              for the sake of promoting robotics and encourage students to put effort in robotics</p>
+	          </div>
+	        </div><!-- /.col-lg-4 -->
+	      </div>
+	    </div>
+	  </div>
 
-  <!-- Achievements -->
-  <div class="sectionDiv" style="text-align: center; background: rgba(0, 202, 255, 1); background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%, rgba(0, 202, 255, 1) 100%);  opacity: 0.95; ">
-    <div class="Achievements_container">
-      <p class="V1_Title" style="color: white;">ACHIEVEMENTS</p>
-      <div class="row" style="text-align: center;">
-        <div class="col-md-4 achievement_items">
-          <img src="images/IMG_0142.JPG" class="img-responsive blogImg" alt="..." width="200" height="200">
-          <div class="my-3">
-            <h5 class="blogTitle" style="color: white;">Provide STEM Education to over 20 Schools</h5>
-            <p class="blogContent" style="color: white;">Various courses as well as the materials required are tailor-made for each school.</p>
-          </div>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-md-4 achievement_items">
-          <!-- <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg> -->
-          <img src="images/IMG_2846.JPG" class="img-responsive blogImg" alt="..." width="200" height="200">
-          <div class="my-3">
-            <h5 class="blogTitle" style="color: white;">Team up with the experienced</h5>
-            <p class="blogContent" style="color: white;">Our students has once represented Hong Kong to join various international contests</p>
-          </div>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-md-4 achievement_items">
-          <!-- <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg> -->
-          <img src="images/IMG_8061.jpg" class="img-responsive blogImg" alt="..." width="200" height="200">
-          <div class="my-3">
-            <h5 class="blogTitle" style="color: white; ">Annual Robotic Competition</h5>
-            <p class="blogContent" style="color: white;">An annual robotic competition is held by us
-              for the sake of promoting robotics and encourage students to put effort in robotics</p>
-          </div>
-        </div><!-- /.col-lg-4 -->
-      </div>
-    </div>
-  </div>
+	  <div class="container sectionDiv">
+	    <div class="container">
+	      <p class="V1_Title">OUR COLLABORATING SCHOOLS & ORGANIZATIONS</p>
+	      <div class="row iconRow" style="text-align: center;">
+	        <div class="col-sm clientsImg">
+	          <a href="https://www.cyberport.hk/en" target="_blank">
+	            <img class="clientsImg" src="images/partner_logos/cyberport_Logo.png" alt="..." >
+	          </a>
+	        </div>
+	        <div class="col-sm clientsImg">
+	          <a href="https://www.hku.hk/" target="_blank">
+	            <img id="img1" class="clientsImg" src="images/partner_logos/University_of_Hong_Kong.png" alt="...">
+	          </a>
+	        </div>
+	      </div>
+	      <!-- FIRST ROW -->
+	      <div class="row iconRow" style="text-align: center;">
+	        <div class="col-sm clientsImg">
+	          <a href="https://www.heungto.net/index/customIndex.aspx" target="_blank">
+	            <img class="clientsImg" src="images/school_logos/school1.png" alt="...">
+	          </a>
+	        </div>
+	        <div class="col-sm clientsImg">
+	          <a href="https://www.ywgs.edu.hk/" target="_blank">
+	            <img id="img2" class="clientsImg" src="images/school_logos/school2.png" alt="...">
+	          </a>
+	        </div>
+	        <div class="col-sm clientsImg">
+	          <a href="https://www.goodschool.hk/%E6%9F%B4%E7%81%A3%E8%A7%92%E5%A4%A9%E4%B8%BB%E6%95%99%E5%B0%8F%E5%AD%B8" target="_blank">
+	            <img class="clientsImg" src="images/school_logos/school3.png" alt="...">
+	          </a>
+	        </div>
+	        <div class="col-sm clientsImg">
+	          <a href="https://paktin.edu.hk/" target="_blank">
+	            <img class="clientsImg" src="images/school_logos/school4.png" alt="...">
+	          </a>
+	        </div>
+	      </div>
 
-  <div class="container sectionDiv">
-    <div class="container">
-      <p class="V1_Title">OUR COLLABORATING SCHOOLS & ORGANIZATIONS</p>
-      <div class="row iconRow" style="text-align: center;">
-        <div class="col-sm clientsImg">
-          <a href="https://www.cyberport.hk/en" target="_blank">
-            <img class="clientsImg" src="images/partner_logos/cyberport_Logo.png" alt="..." >
-          </a>
-        </div>
-        <div class="col-sm clientsImg">
-          <a href="https://www.hku.hk/" target="_blank">
-            <img class="clientsImg" src="images/partner_logos/University_of_Hong_Kong.png" alt="..." style="width: 180px;">
-          </a>
-        </div>
-      </div>
-      <!-- FIRST ROW -->
-      <div class="row iconRow" style="text-align: center;">
-        <div class="col-sm clientsImg">
-          <a href="https://www.heungto.net/index/customIndex.aspx" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school1.png" alt="...">
-          </a>
-        </div>
-        <div class="col-sm clientsImg">
-          <a href="https://www.ywgs.edu.hk/" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school2.png" alt="..." style="width: 180px;">
-          </a>
-        </div>
-        <div class="col-sm clientsImg">
-          <a href="https://www.goodschool.hk/%E6%9F%B4%E7%81%A3%E8%A7%92%E5%A4%A9%E4%B8%BB%E6%95%99%E5%B0%8F%E5%AD%B8" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school3.png" alt="...">
-          </a>
-        </div>
-        <div class="col-sm clientsImg">
-          <a href="https://paktin.edu.hk/" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school4.png" alt="...">
-          </a>
-        </div>
-      </div>
+	      <!-- SECOND ROW -->
+	      <div class="row iconRow" style="text-align: center;">
+	        <div class="col-sm clientsImg">
+	          <a href="http://www.cwgc.edu.hk/" target="_blank">
+	            <img class="clientsImg" src="images/school_logos/school5.png" alt="...">
+	          </a>
+	        </div>
+	        <div class="col-sm clientsImg">
+	          <a href="https://www.mycswcss.com/" target="_blank">
+	            <img id="img3" class="clientsImg" src="images/school_logos/school6.png" alt="...">
+	          </a>
+	        </div>
+	        <div class="col-sm clientsImg">
+	          <a href="https://www.gccps.edu.hk/website/" target="_blank">
+	            <img class="clientsImg" src="images/school_logos/school7.png" alt="...">
+	          </a>
+	        </div>
+	        <div class="col-sm clientsImg">
+	          <a href="https://www.sjbcps.edu.hk/" target="_blank">
+	            <img class="clientsImg" src="images/school_logos/school8.png" alt="...">
+	          </a>
+	        </div>
+	      </div>
+	      <!-- THRID ROW -->
+	      <div class="row iconRow" style="text-align: center;">
+	        <div class="col-sm clientsImg">
+	          <a href="http://www.syhps.edu.hk/it-school/php/webcms/public/index.php3?refid=841&mode=published&nocache1629268814" target="_blank">
+	            <img id="img4" class="clientsImg" src="images/school_logos/school9.png" alt="...">
+	          </a>
+	        </div>
+	        <div class="col-sm clientsImg">
+	          <a href="http://www.smpcps.edu.hk/website/" target="_blank">
+	            <img class="clientsImg" src="images/school_logos/school10.png" alt="...">
+	          </a>
+	        </div>
+	        <div class="col-sm clientsImg">
+	          <a href="http://www.cyma.edu.hk/" target="_blank">
+	            <img class="clientsImg" src="images/school_logos/school11.png" alt="..." >
+	          </a>
+	        </div>
+	        <div class="col-sm clientsImg">
+	          <a href="https://www.lst-lkkps.edu.hk/" target="_blank">
+	            <img class="clientsImg" src="images/school_logos/school13.png" alt="...">
+	          </a>
+	        </div>
+	    </div>
+	  </div>
 
-      <!-- SECOND ROW -->
-      <div class="row iconRow" style="text-align: center;">
-        <div class="col-sm clientsImg">
-          <a href="http://www.cwgc.edu.hk/" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school5.png" alt="...">
-          </a>
-        </div>
-        <div class="col-sm clientsImg">
-          <a href="https://www.mycswcss.com/" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school6.png" alt="..." style="width: 160px;">
-          </a>
-        </div>
-        <div class="col-sm clientsImg">
-          <a href="https://www.gccps.edu.hk/website/" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school7.png" alt="...">
-          </a>
-        </div>
-        <div class="col-sm clientsImg">
-          <a href="https://www.sjbcps.edu.hk/" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school8.png" alt="...">
-          </a>
-        </div>
-      </div>
-      <!-- THRID ROW -->
-      <div class="row iconRow" style="text-align: center;">
-        <div class="col-sm clientsImg">
-          <a href="http://www.syhps.edu.hk/it-school/php/webcms/public/index.php3?refid=841&mode=published&nocache1629268814" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school9.png" alt="..." style="width: 180px;">
-          </a>
-        </div>
-        <div class="col-sm clientsImg">
-          <a href="http://www.smpcps.edu.hk/website/" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school10.png" alt="...">
-          </a>
-        </div>
-        <div class="col-sm clientsImg">
-          <a href="http://www.cyma.edu.hk/" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school11.png" alt="..." >
-          </a>
-        </div>
-        <div class="col-sm clientsImg">
-          <a href="https://www.lst-lkkps.edu.hk/" target="_blank">
-            <img class="clientsImg" src="images/school_logos/school13.png" alt="...">
-          </a>
-        </div>
-    </div>
-  </div>
+	  <iframe id="footerDiv" src="footer.html" width="100%" height="150px" scrolling="no" frameborder="no" allowTransparency="true"></iframe>
+  </main>
 
-  <iframe id="footerDiv" src="footer.html" width="100%" height="150px" scrolling="no" frameborder="no" allowTransparency="true"></iframe>
+  <nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li class="has-children">
+				<a href="#0">PRODUCTS</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<!-- <li class="see-all"><a href="#0">Browse Services</a></li> -->
+          <li>
+						<a class="cd-nav-item item-1" href="product-pila.html">
+							<h3>Robot PILA</h3>
+							<p>Professional Soccer Robot for beginners</p>
+						</a>
+					</li>
+          <li>
+						<a class="cd-nav-item item-2" href="#0">
+							<h3>AiBit</h3>
+							<p>First micro:bit- compatible AI development Kit for beginners</p>
+						</a>
+					</li>
+          <li>
+						<a class="cd-nav-item item-3" href="#0">
+							<h3>EDU Kit</h3>
+							<p>STEM Learning Kit designed for local teens</p>
+						</a>
+					</li>
+				</ul>
+			</li>
 
+			<li class="has-children">
+				<a href="#0">SERVICES</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<!-- <li class="see-all"><a href="#0">Browse Services</a></li> -->
+          <li>
+						<a class="cd-nav-item item-1" href="./services/STEM-education-service.html">
+							<h3>STEM Education Service</h3>
+							<p>Nurture our future, motivate our teens</p>
+						</a>
+					</li>
+					<li>
+						<a class="cd-nav-item item-2" href="./services/design-consultant-service.html">
+							<h3>Inno-Tech Solution Consultance</h3>
+							<p>Turn your ideas into products</p>
+						</a>
+					</li>
+				</ul>
+			</li>
+      <li><a href="#0">JOIN US</a></li>
+			<li><a href="./contactus.html">CONTACT US</a></li>
+      <li>
+        <a href="https://www.facebook.com/peanut.king.hk" target="_blank">
+          <img class="social_media_icon" src="images/social_media/facebook.svg" >
+        </a>
+        <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
+          <img class="social_media_icon" src="images/social_media/instagram.svg">
+        </a>
+        <a href="https://www.linkedin.com/company/peanut-king-solution-limited/mycompany/" target="_blank">
+          <img class="social_media_icon" src="images/social_media/linkedin.svg">
+        </a>
+      </li>
+		</ul> <!-- primary-nav -->
+	</nav> <!-- cd-nav -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
-
 </html>

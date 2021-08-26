@@ -7,6 +7,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Navbar needed-->
+  <link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
+  <script src="../js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="../js/jquery.mobile.custom.min.js"></script>
+  <script src="../js/jquery-2.1.1.js"></script>
+  <script src="../js/jquery.mobile.custom.min.js"></script>
+  <script src="../js/main.js"></script> <!-- Resource jQuery -->
+  <script>
+    var functionforscroll = function(id){
+      var reqId = "#"+id;
+      window.scrollTo(0, $(reqId).offset().top);
+      return false;
+    }
+  </script>
+
   <!-- Bootstrap CSS -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
@@ -24,326 +40,293 @@
 </head>
 
 <body>
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" id="topbar">
-      <div class="container navbarContainer">
+  <header class="cd-main-header">
+    <a class="cd-logo" href="index.html"><img src="../images/LOGO-BLACK.svg" alt="Logo" width="112.5" height="75" ></a>
 
-        <!-- ICON -->
-        <a class="navbar-brand" href="index.html" target="_top">
-          <img src="../images/LOGO-BLACK.svg" width="115" height="76" alt="">
-        </a>
-
-        <!-- ITEMS -->
-        <div class="navbarItem" id="navbarSupportedContent">
-          <!-- <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">  -->
-          <ul class="navbar-nav flex-row ml-md-auto">
-            <!-- Nav items -->
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html" target="_top">HOME</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="../aboutus.html" target="_top">ABOUT US</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                PRODUCTS & SERVICES
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="product-pila.html">Robot PILA</a>
-                <a class="dropdown-item" href="#">PeanutKING Edu Kit</a>
-                <a class="dropdown-item" href="#">Ai Bit</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../joinus.html" target="_top">JOIN US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../contactus.html" target="_top">CONTACT US</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- SOCIAL MEDIA -->
-        <div class="navbar-social-media" id="navbarSupportedContent">
-          <ul class="navbar-nav flex-row ml-md-auto ">
-            <li class="nav-item">
-              <a href="https://www.facebook.com/peanut.king.hk" target="_blank">
-                <img class="social_media_icon" src="../images/social_media/facebook.svg" >
-              </a>
-              <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
-                <img class="social_media_icon" src="../images/social_media/instagram.svg">
-              </a>
-              <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
-                <img class="social_media_icon" src="../images/social_media/linkedin.svg">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("topbar");
-        if (x.className == "navbar-expand-lg") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
+    <ul class="cd-header-buttons">
+      <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+    </ul> <!-- cd-header-buttons -->
   </header>
 
-  <div class="sectionDivEdu" style="background: rgb(64, 128, 191);
-   background: linear-gradient(135deg, rgb(64, 128, 191) 0%, rgba(47, 12, 69, 1) 100%);  opacity: 0.95; ">
-    <div class="row">
-      <div class="column">
-        <p class="edu_title">Education Service<br><span class="on-site-courses">On-site course</span></p>
+  <main class="cd-main-content">
+    <div class="sectionDivEdu" style="background: rgb(64, 128, 191);
+     background: linear-gradient(135deg, rgb(64, 128, 191) 0%, rgba(47, 12, 69, 1) 100%);  opacity: 0.95; ">
+      <div class="row">
+        <div class="edu_col1">
+          <p class="edu_title">Education Service<br><span class="on-site-courses">On-site course</span></p>
 
-        <div class="edu_slogan">
-          "Everyone in this country should learn to program a computer,
-           because it teaches you to think."
-           <br></br>— Steve Jobs</p>
-         </div>
+          <div class="edu_slogan">
+            "Everyone in this country should learn to program a computer,
+             because it teaches you to think."
+             <br></br>— Steve Jobs</p>
+           </div>
+        </div>
+
+        <div class="edu_col2">
+            <img class="edu_div_img" src="../images/services/arduino_event.png"></img>
+        </div>
       </div>
 
-      <div class="column">
-          <img class="edu_div_img" src="../images/services/arduino_event.png"></img>
       </div>
-    </div>
 
     </div>
+    <div class="overview-div">
+      <div class="row overview" style="text-align: center;">
+        <div class="overview-item col-sm-4">
+          <a href="#RobotPILA">
+            <p class="overview-title">Robotic Soccer Training Course</p>
+            <div class="overview-img-div">
+              <img class="overview-img" src="../images/services/RobotPILA.png"></img>
+            </div>
+          </a>
+        </div>
 
-  </div>
-  <div class="overview-div">
-    <div class="row overview" style="text-align: center;">
+
       <div class="overview-item col-sm-4">
-        <a href="#RobotPILA">
-          <p class="overview-title">Robotic Soccer Training Course</p>
+        <a href="#Arduino">
+          <p class="overview-title">Arduino</p>
           <div class="overview-img-div">
-            <img class="overview-img" src="../images/services/RobotPILA.png"></img>
+            <img class="overview-img" src="../images/services/Arduino.png"></img>
           </div>
         </a>
       </div>
 
-
-    <div class="overview-item col-sm-4">
-      <a href="#Arduino">
-        <p class="overview-title">Arduino</p>
-        <div class="overview-img-div">
-          <img class="overview-img" src="../images/services/Arduino.png"></img>
-        </div>
-      </a>
-    </div>
-
-    <div class="overview-item col-sm-4">
-      <a href="#AiBit">
-        <p class="overview-title">Ai Bit</p>
-        <div class="overview-img-div">
-          <img class="overview-img" src="../images/services/Arduino.png"></img>
-        </div>
-      </a>
-    </div>
-
-  </div>
-</div>
-<!-- Each courses -->
-  <div id="RobotPILA" class="tag sectionDivSer">
-    <div class="row">
-      <div class="col-sm-2">
-
+      <div class="overview-item col-sm-4">
+        <a href="#AiBit">
+          <p class="overview-title">Ai Bit</p>
+          <div class="overview-img-div">
+            <img class="overview-img" src="../images/services/Arduino.png"></img>
+          </div>
+        </a>
       </div>
-      <div class="service_col col-sm-8">
-        <h3 class="ser_title">Robotic Soccer Training Course</h3>
-        <p class="ser_certificate">Participants will receive certificates of completion upon finishing the course.</p>
-        <hr/>
 
-        <div class="row">
-          <div class="column">
-            <p class="ser_brief">
-              Students learn programming and robotics components through assembling
-               the soccer theme based robot - Robot PILA, developed and produced
-                in-house for this objective based course.
+    </div>
+  </div>
+  <!-- Each courses -->
+    <div id="RobotPILA" class="sectionDivSer">
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="service_col col-sm-8">
+          <h3 class="ser_title">Robotic Soccer Training Course</h3>
+          <p class="ser_certificate">Participants will receive certificates of completion upon finishing the course.</p>
+          <hr/>
+          <div class="row course_row">
+            <div class="stem_stem_column ser_col">
+              <p class="ser_brief">
+                Students learn programming and robotics components through assembling
+                 the soccer theme based robot - Robot PILA, developed and produced
+                  in-house for this objective based course.
+              </p>
+              <div>
+                <h5 class="ser_target">Target: </h5>
+                <p class"ser_target_content">F.2-F.5 students<p>
+              </div>
 
-              <!-- <br></br>
-              The course is arranged in an order that students are able to consolidate
-              and employ taught skills and knowledge in every next lesson.
-              In the later stage of the course, competitions are held to create a
-              competitive environment to prompt cogitation of students on the course. -->
+              <div>
+                <h5 class="ser_duration">Suggested duration: </h5>
+                <p class"ser_duration_content">16 hours<p>
+              </div>
 
-              <!-- <br>
-              Each lesson is mission based, such that students can grasp clear
-              learning objectives and self-derive the solutions of the missions.
-              Under guidance through these lessons, student’s creativity and
-              problem-solving can be aroused. The course also requires students to
-              come up with various solutions when coping with different difficulties,
-              training their divergent thinking ability.
-              </br> -->
-            </p>
-            <div>
-              <h5 class="ser_target">Target: </h5>
-              <p class"ser_target_content">F.2-F.5 students<p>
-            </div>
-
-            <div>
-              <h5 class="ser_duration">Suggested duration: </h5>
-              <p class"ser_duration_content">16 hours<p>
-            </div>
-
-            <div>
-              <h5 class="ser_detail">Class Contents: </h5>
-              <p class"ser_detail_content">
-                <ul>
+              <div>
+                <h5 class="ser_detail">Class Contents: </h5>
+                <p class"ser_detail_content">
                   <li>Introduction to soccer robot structure and robot assembly</li>
                   <li>Basic programming and circuit theory</li>
                   <li>Sensor testing and basic control</li>
                   <li>Rules of robotic soccer tournament</li>
                   <li>Robotic soccer friendly match</li>
-                </ul>
-              </p>
+                </p>
+              </div>
+              <div>
+                <h5 class="ser_material">Teaching materials: </h5>
+                <p class"ser_material_content">
+                <li>Robot PILA</li>
+                </p>
+              </div>
             </div>
-            <div>
-              <h5 class="ser_material">Teaching materials: </h5>
-              <p class"ser_material_content">
-                <ul>
-                  <li>Robot PILA</li>
-                </ul>
-              </p>
+            <div class="stem_column ser_col">
+              <img class="ser_photo" src="../images/services/robotPILA_event.jpg"></img>
             </div>
-          </div>
-          <div class="column">
-            <img class="ser_photo" src="../images/services/robotPILA_event.jpg"></img>
           </div>
         </div>
+        <div class="col-sm-2"></div>
       </div>
-      <div class="col-sm-2"></div>
     </div>
-  </div>
 
-  <div id="Arduino" class="tag sectionDivSer">
-    <div class="row">
-      <div class="col-sm-2">
+    <div id="Arduino" class="sectionDivSer">
+      <div class="row">
+        <div class="col-sm-2">
 
-      </div>
-      <div class="service_col col-sm-8">
-        <h3 class="ser_title">STEM Arduino Robotics Programming Course</h3>
-        <hr/>
+        </div>
+        <div class="service_col col-sm-8">
+          <h3 class="ser_title">STEM Arduino Robotics Programming Course</h3>
+          <hr/>
 
-        <div class="row">
-          <div class="column">
-            <p class="ser_brief">
-              Students learn robotics engineering from IDE to microcontrollers and sensors,
-              cultivating creativity and problem solving skills by going through difficulties
-              encountered in robotic missions and C based programming.
-              <!-- <br></br> -->
-            </p>
-            <div>
-              <h5 class="ser_target">Target: </h5>
-              <p class"ser_target_content">Junior Form Students<p>
-            </div>
+          <div class="row course_row">
+            <div class="stem_column ser_col">
+              <p class="ser_brief">
+                Students learn robotics engineering from IDE to microcontrollers and sensors,
+                cultivating creativity and problem solving skills by going through difficulties
+                encountered in robotic missions and C based programming.
+                <!-- <br></br> -->
+              </p>
+              <div>
+                <h5 class="ser_target">Target: </h5>
+                <p class"ser_target_content">Junior Form Students<p>
+              </div>
 
-            <div>
-              <h5 class="ser_duration">Suggested duration: </h5>
-              <p class"ser_duration_content">16 hours<p>
-            </div>
+              <div>
+                <h5 class="ser_duration">Suggested duration: </h5>
+                <p class"ser_duration_content">16 hours<p>
+              </div>
 
-            <div>
-              <h5 class="ser_detail">Class Contents: </h5>
-              <p class"ser_detail_content">
-                <ul>
+              <div>
+                <h5 class="ser_detail">Class Contents: </h5>
+                <p class"ser_detail_content">
                   <li>Basic Arduino programming skills</li>
                   <li>Robot Assembly</li>
                   <li>Working principle of sensors, control and use of sensors</li>
                   <li>Robot Mission Competition</li>
-                </ul>
-              </p>
-            </div>
-            <div>
-              <h5 class="ser_material">Teaching materials: </h5>
-              <p class"ser_material_content">
-                <ul>
+                </p>
+              </div>
+              <div>
+                <h5 class="ser_material">Teaching materials: </h5>
+                <p class"ser_material_content">
                   <li>Micro:bit</li>
                   <li>Peanut KING EDU Kit</li>
                   <li>Peanut KING Micro:bit Shield</li>
-                </ul>
-              </p>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="column">
-            <img class="ser_photo" src="../images/services/arduino_event.png"></img>
+            <div class="stem_column ser_col">
+              <img class="ser_photo" src="../images/services/arduino_event.png"></img>
+            </div>
           </div>
         </div>
+        <div class="col-sm-2"></div>
       </div>
-      <div class="col-sm-2"></div>
     </div>
-  </div>
 
-  <div id="AiBit" class="tag sectionDivSer">
-    <div class="row">
-      <div class="col-sm-2">
+    <div id="AiBit" class="sectionDivSer">
+      <div class="row">
+        <div class="col-sm-2">
 
-      </div>
-      <div class="service_col col-sm-8">
-        <h3 class="ser_title">STEM x AI Machine Learning Coding Course</h3>
-        <p class="ser_certificate">Participants will receive certificates of completion upon finishing the course.</p>
-        <hr/>
-        <div class="row">
-          <div class="column">
-            <p class="ser_brief">
-              Students learn A.I. fused with robotics engineering with different A.I.
-              models using Python programming, and at the same time train up problem
-              solving skills through STEM X AI fusion robotic car.
-              <!-- <br></br> -->
-            </p>
-            <div>
-              <h5 class="ser_target">Target: </h5>
-              <p class"ser_target_content">F.3-F.5 Students<p>
-            </div>
+        </div>
+        <div class="service_col col-sm-8">
+          <h3 class="ser_title">STEM x AI Machine Learning Coding Course</h3>
+          <p class="ser_certificate">Participants will receive certificates of completion upon finishing the course.</p>
+          <hr/>
+          <div class="row course_row">
+            <div class="stem_column ser_col">
+              <p class="ser_brief">
+                Students learn A.I. fused with robotics engineering with different A.I.
+                models using Python programming, and at the same time train up problem
+                solving skills through STEM X AI fusion robotic car.
+                <!-- <br></br> -->
+              </p>
+              <div>
+                <h5 class="ser_target">Target: </h5>
+                <p class"ser_target_content">F.3-F.5 Students<p>
+              </div>
 
-            <div>
-              <h5 class="ser_duration">Suggested duration: </h5>
-              <p class"ser_duration_content">16 hours<p>
-            </div>
+              <div>
+                <h5 class="ser_duration">Suggested duration: </h5>
+                <p class"ser_duration_content">16 hours<p>
+              </div>
 
-            <div>
-              <h5 class="ser_detail">Class Contents: </h5>
-              <p class"ser_detail_content">
-                <ul>
+              <div>
+                <h5 class="ser_detail">Class Contents: </h5>
+                <p class"ser_detail_content">
                   <li>Introduction to Python Programming interface</li>
                   <li>Python programming skills</li>
                   <li>Robotic Car Assembly</li>
                   <li>Importing and applying face recognition model</li>
                   <li>Creating, importing and applying object recognition model</li>
-                </ul>
-              </p>
-            </div>
-            <div>
-              <h5 class="ser_material">Teaching materials: </h5>
-              <p class"ser_material_content">
-                <ul>
+                </p>
+              </div>
+              <div>
+                <h5 class="ser_material">Teaching materials: </h5>
+                <p class"ser_material_content">
                   <li>AiBit</li>
                   <li>Peanut KING EDU Kit</li>
                   <li>Peanut KING Micro:bit Shield</li>
-                </ul>
-              </p>
+                </p>
+              </div>
+            </div>
+            <div class="stem_column ser_col">
+              <img class="ser_photo" src="../images/services/robotPILA_event.jpg"></img>
             </div>
           </div>
-          <div class="column">
-            <img class="ser_photo" src="../images/services/robotPILA_event.jpg"></img>
-          </div>
         </div>
+        <div class="col-sm-2"></div>
       </div>
-      <div class="col-sm-2"></div>
     </div>
-  </div>
+    <iframe id="footerDiv" src="../footer.html" width="100%" height="150px" scrolling="no" frameborder="no" allowTransparency="true"></iframe>
+  </main>
+  <nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="../aboutus.html">ABOUT US</a></li>
+      <li class="has-children">
+				<a href="#0">PRODUCTS</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<!-- <li class="see-all"><a href="#0">Browse Services</a></li> -->
+          <li>
+						<a class="cd-nav-item item-1" href="../product-pila.html">
+							<h3>Robot PILA</h3>
+							<p>Professional Soccer Robot for beginners</p>
+						</a>
+					</li>
+          <li>
+						<a class="cd-nav-item item-2" href="#0">
+							<h3>AiBit</h3>
+							<p>First micro:bit- compatible AI development Kit for beginners</p>
+						</a>
+					</li>
+          <li>
+						<a class="cd-nav-item item-3" href="#0">
+							<h3>EDU Kit</h3>
+							<p>STEM Learning Kit designed for local teens</p>
+						</a>
+					</li>
+				</ul>
+			</li>
 
-
-  <iframe id="footerDiv" src="../footer.html" width="100%" height="150px" scrolling="no" frameborder="no" allowTransparency="true"></iframe>
+			<li class="has-children">
+				<a href="#0">SERVICES</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<!-- <li class="see-all"><a href="#0">Browse Services</a></li> -->
+					<li>
+						<a class="cd-nav-item item-1" href="./STEM-education-service.html">
+							<h3>STEM Education Service</h3>
+							<p>Nurture our future, motivate our teens</p>
+						</a>
+					</li>
+					<li>
+						<a class="cd-nav-item item-2" href="./design-consultant-service.html">
+							<h3>Inno-Tech Solution Consultance</h3>
+							<p>Turn your ideas into products</p>
+						</a>
+					</li>
+				</ul>
+			</li>
+      <li><a href="#0">JOIN US</a></li>
+			<li><a href="../contactus.html">CONTACT US</a></li>
+      <li>
+        <a href="https://www.facebook.com/peanut.king.hk" target="_blank">
+          <img class="social_media_icon" src="../images/social_media/facebook.svg" >
+        </a>
+        <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
+          <img class="social_media_icon" src="../images/social_media/instagram.svg">
+        </a>
+        <a href="https://www.linkedin.com/company/peanut-king-solution-limited/mycompany/" target="_blank">
+          <img class="social_media_icon" src="../images/social_media/linkedin.svg">
+        </a>
+      </li>
+		</ul> <!-- primary-nav -->
+	</nav> <!-- cd-nav -->
 </body>
-
 </html>

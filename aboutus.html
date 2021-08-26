@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 
 <head>
+  <link rel="icon" href="./images/Logo2.png">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
+  <!-- Navbar needed-->
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
 
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
@@ -18,217 +25,151 @@
 </head>
 
 <body style="background-color: transparent">
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" id="topbar">
-      <div class="container navbarContainer">
+  <header class="cd-main-header">
+    <a class="cd-logo" href="index.html"><img src="images/LOGO-BLACK.svg" alt="Logo" width="112.5" height="75" ></a>
 
-        <!-- ICON -->
-        <a class="navbar-brand" href="index.html" target="_top">
-          <img src="./images/LOGO-BLACK.svg" width="115" height="76" alt="">
-        </a>
-
-        <!-- ITEMS -->
-        <div class="navbarItem" id="navbarSupportedContent">
-          <!-- <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">  -->
-          <ul class="navbar-nav flex-row ml-md-auto">
-            <!-- Nav items -->
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html" target="_top">HOME</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./aboutus.html" target="_top">ABOUT US</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                PRODUCTS & SERVICES
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="product-pila.html">Robot PILA</a>
-                <a class="dropdown-item" href="#">PeanutKING Edu Kit</a>
-                <a class="dropdown-item" href="#">Ai Bit</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./joinus.html" target="_top">JOIN US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contactus.html" target="_top">CONTACT US</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- SOCIAL MEDIA -->
-        <div class="navbar-social-media" id="navbarSupportedContent">
-          <ul class="navbar-nav flex-row ml-md-auto ">
-            <li class="nav-item">
-              <a href="https://www.facebook.com/peanut.king.hk" target="_blank">
-                <img class="social_media_icon" src="./images/social_media/facebook.svg" >
-              </a>
-              <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
-                <img class="social_media_icon" src="./images/social_media/instagram.svg">
-              </a>
-              <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
-                <img class="social_media_icon" src="./images/social_media/linkedin.svg">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("topbar");
-        if (x.className == "navbar-expand-lg") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
+    <ul class="cd-header-buttons">
+      <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+    </ul> <!-- cd-header-buttons -->
   </header>
 
-  <div class="banner aboutusBanner">
-    <div class='about-us'>About Us</div>
-  </div>
-
-  <div class="container sectionDiv">
-    <div class="row featurette mh-80 productDescriptionDiv tag3">
-      <div class="col-md-4 sloganTextDiv">
-        <!-- <img src="" class="img-responsive" alt=""> -->
-        <!-- <img class="img-responsive productImg" src="images/LOGO_PEANUT KING_for Gsuite.png" alt="..."> -->
-        <p class="slogan">WE CREATE</p>
-        <p class="slogan">WE INNOVATE</p>
-        <p class="slogan">WE SOLVE</p>
-      </div>
-      <div class="col-md-8 productDescriptionText">
-        <p class="lead">Founded in September 2017 by a group of young engineering enthusiastic talents,
-           Peanut KING has been providing STEM education services as well as inhouse tailor-made materials to local schools.
-            We aim at prompting robotics technology and providing professional solutions on technical designs to schools and students.</p>
-      </div>
+  <main class="cd-main-content">
+    <div class="banner aboutusBanner">
+      <div class='about-us'>About Us</div>
     </div>
-  </div>
 
-  <div class="container my-5 py-4 sectionDi tag4" >
-    <div class="row featurette mh-80">
-      <div class="col-md-8">
-        <!-- <h4 class="featurette-heading text-center">Vision</h4>
-        <p class="lead text-center text-muted">WE CREATE, WE INNOVATE, WE SOLVE</p> -->
-        <ul class="lead productDescriptionDiv">
-          <li class="">To create opportunities for schools and students to experience robotics technology through STEM education;</li>
-          <li class="">To innovate new designs and ideas on STEM and robotics education with inhouse product production;</li>
-          <li class="">To solve, with profession solutions and state-of-art technology, the education of local primary and secondary schools.</li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <img src="images/microscope.svg" class="img-responsive websiteLogo" alt="..." width="200" height="200">
-        <p class="slogan"; style="margin-top: 20px;">VISION</p>
+    <div class="container sectionDiv">
+      <div class="row featurette mh-80 productDescriptionDiv">
+        <div class="col-md-4 sloganTextDiv">
+          <!-- <img src="" class="img-responsive" alt=""> -->
+          <!-- <img class="img-responsive productImg" src="images/LOGO_PEANUT KING_for Gsuite.png" alt="..."> -->
+          <p class="slogan">WE CREATE</p>
+          <p class="slogan">WE INNOVATE</p>
+          <p class="slogan">WE SOLVE</p>
+        </div>
+        <div class="col-md-8 productDescriptionText">
+          <p class="lead">Founded in September 2017 by a group of young engineering enthusiastic talents,
+             Peanut KING has been providing STEM education services as well as inhouse tailor-made materials to local schools.
+              We aim at prompting robotics technology and providing professional solutions on technical designs to schools and students.</p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container sectionDiv tag2" style="text-align: center;">
-    <h4 style="font-size: 200%;">MISSION</h4>
-    <div class="row py-3" style="text-align: center;">
-      <div class="col-lg-4">
-        <img src="images/IMG_2146.jpg" class="img-responsive productImg" alt="..." width="350" height="350">
-        <!-- <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg> -->
-        <div class="my-3">
-          <p class="">Deliver state-of-art professional technology and innovation solution to schools, initiating a bright future</p>
+    <div class="container my-5 py-4 sectionDiv" >
+      <div class="row featurette mh-80 vision">
+        <div class="col-md-8">
+          <!-- <h4 class="featurette-heading text-center">Vision</h4>
+          <p class="lead text-center text-muted">WE CREATE, WE INNOVATE, WE SOLVE</p> -->
+          <div class="lead productDescriptionDiv">
+            <li class="">To create opportunities for schools and students to experience robotics technology through STEM education;</li>
+            <li class="">To innovate new designs and ideas on STEM and robotics education with inhouse product production;</li>
+            <li class="">To solve, with profession solutions and state-of-art technology, the education of local primary and secondary schools.</li>
+          </div>
         </div>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="images/v4_363 - Copy.png" class="img-responsive productImg" alt="..." width="350" height="350">
-        <div class="my-3">
-          <p class="">Offer primary and secondary schools STEM education courses, so as to popularize robotics technology and programming techniques and to cultivate the interest of Hong Kong teenagers towards innovation and technology</p>
-        </div>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <!-- <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg> -->
-        <img src="images/v4_385.png" class="img-responsive productImg" alt="..." width="350" height="350">
-        <div class="my-3">
-          <p class="">Provide comprehensive product prototyping and pre-production enquiry services to satisfy any needs of the customer</p>
-        </div>
-      </div><!-- /.col-lg-4 -->
-    </div>
-  </div>
-
-  <!-- <div class="container sectionDiv" style="text-align: center;">
-    <h3 class="">Past Achievements</h3>
-    <div class="row py-3" style="text-align: center;">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg>
-        <div class="my-3">
-          <p class="v301_422">Formulate STEM educational services for over 20 local primary and secondary schools </p>
-        </div>
-      </div> -->
-      <!-- /.col-lg-4 -->
-      <!-- <div class="col-lg-6">
-        <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg>
-        <div class="my-3">
-          <p class="v301_422">Long term partnership with one of the eight schools of the Enriched IT Programme launched by the Government </p>
-        </div>
-      </div><!-- /.col-lg-4 -->
-    <!-- <div class="col-lg-6">
-        <img src="images/P_20200118_110445.jpg" class="img-responsive productImg" alt="..." width="200" height="200">
-        <div class="my-3">
-          <p class="mx-5">Incubate under the Hong Kong Cyberport Incubation programme </p>
-        </div> -->
-      <!-- </div><!-- /.col-lg-4
-    </div>
-  </div> -->
-
-  <!-- <div class="sectionDiv" style="text-align: center; background-color: #eee;">
-    <div class="container">
-      <div class="row py-4" style="text-align: center;">
         <div class="col-md-4">
-          <img src="images/IMG_0142.JPG" class="img-responsive productImg" alt="..." width="200" height="200">
-          <div class="my-3">
-            <h5 class="">Provide STEM Education to over 20 Schools</h5>
-            <p class="">Various courses as well as the materials required are tailor-made for each school.</p>
-          </div> -->
-        <!-- </div><!-- /.col-lg-4 -->
-        <!-- <div class="col-md-4">
-          <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg>
-          <img src="images/IMG_2846.JPG" class="img-responsive productImg" alt="..." width="200" height="200">
-          <div class="my-3">
-            <h5 class="">Team up with the experienced</h5>
-            <p class="">Our students has once represented Hong Kong to join various international contests</p>
-          </div> -->
-         <!-- </div><!-- /.col-lg-4
-         <div class="col-md-4">
-          <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg> -->
-          <!-- <img src="images/IMG_8061.jpg" class="img-responsive productImg" alt="..." width="200" height="200">
-          <div class="my-3">
-            <h5 class="">Annual Robotic Competition</h5>
-            <p class="">An annual robotic competition is held by us
-              for the sake of promoting robotics and encourage students to put effort in robotics</p>
-          </div> -->
-        <!-- </div><!-- /.col-lg-4 -->
-       <!-- </div>
+          <img src="images/microscope.svg" class="img-responsive websiteLogo" alt="..." width="200" height="200">
+          <p class="slogan"; style="margin-top: 20px;">VISION</p>
+        </div>
+      </div>
     </div>
-  </div> -->
-  <div class="container sectionDiv">
-  <!-- <video width="1100" height="620" controls> -->
-  <!-- <video height="auto" width="100%" controls>
-    <source src="video/Peanut King Promotion Video 1-min.mp4" type="video/mp4">
-      Your browser does not support the video.
-  </video> -->
 
-    <iframe class="tag2" width="1140" height="641.25" src="https://www.youtube.com/embed/o68mLEhiZsc" title="Peanut King Solution Limited Promotion Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+    <div class="container sectionDiv" style="text-align: center;">
+      <h4 style="font-size: 200%;">MISSION</h4>
+      <div class="row py-3" style="text-align: center;">
+        <div class="col-lg-4">
+          <img src="images/IMG_2146.jpg" class="img-responsive productImg" alt="..." width="350" height="350">
+          <!-- <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg> -->
+          <div class="my-3">
+            <p class="mission">Deliver state-of-art professional technology and innovation solution to schools, initiating a bright future</p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="images/v4_363 - Copy.png" class="img-responsive productImg" alt="..." width="350" height="350">
+          <div class="my-3">
+            <p class="mission">Offer primary and secondary schools STEM education courses, so as to popularize robotics technology and programming techniques and to cultivate the interest of Hong Kong teenagers towards innovation and technology</p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <!-- <svg class="bd-placeholder-img rounded-circle mx-auto" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#aaa"></rect></svg> -->
+          <img src="images/v4_385.png" class="img-responsive productImg" alt="..." width="350" height="350">
+          <div class="my-3">
+            <p class="mission">Provide comprehensive product prototyping and pre-production enquiry services to satisfy any needs of the customer</p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div>
+    <div class="sectionDiv videoDiv">
+      <iframe class="video" src="https://www.youtube.com/embed/o68mLEhiZsc" title="Peanut King Solution Limited Promotion Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+    </div>
+    <iframe id="footerDiv" src="footer.html" width="100%" height="300px" scrolling="no" frameborder="no" allowTransparency="true"></iframe>
+  </main>
 
-  <!-- <body>
-    <object data="https://youtu.be/o68mLEhiZsc" width="1100" height="620" controls></object>
-  </body> -->
+  <nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li class="has-children">
+				<a href="#0">PRODUCTS</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<!-- <li class="see-all"><a href="#0">Browse Services</a></li> -->
+          <li>
+						<a class="cd-nav-item item-1" href="product-pila.html">
+							<h3>Robot PILA</h3>
+							<p>Professional Soccer Robot for beginners</p>
+						</a>
+					</li>
+          <li>
+						<a class="cd-nav-item item-2" href="#0">
+							<h3>AiBit</h3>
+							<p>First micro:bit- compatible AI development Kit for beginners</p>
+						</a>
+					</li>
+          <li>
+						<a class="cd-nav-item item-3" href="#0">
+							<h3>EDU Kit</h3>
+							<p>STEM Learning Kit designed for local teens</p>
+						</a>
+					</li>
+				</ul>
+			</li>
 
-  <div>
-  <iframe id="footerDiv" src="footer.html" width="100%" height="300px" scrolling="no" frameborder="no" allowTransparency="true"></iframe>
-
+			<li class="has-children">
+				<a href="#0">SERVICES</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<!-- <li class="see-all"><a href="#0">Browse Services</a></li> -->
+          <li>
+						<a class="cd-nav-item item-1" href="./services/STEM-education-service.html">
+							<h3>STEM Education Service</h3>
+							<p>Nurture our future, motivate our teens</p>
+						</a>
+					</li>
+					<li>
+						<a class="cd-nav-item item-2" href="./services/design-consultant-service.html">
+							<h3>Inno-Tech Solution Consultance</h3>
+							<p>Turn your ideas into products</p>
+						</a>
+					</li>
+				</ul>
+			</li>
+      <li><a href="#0">JOIN US</a></li>
+			<li><a href="./contactus.html">CONTACT US</a></li>
+      <li>
+        <a href="https://www.facebook.com/peanut.king.hk" target="_blank">
+          <img class="social_media_icon" src="images/social_media/facebook.svg" >
+        </a>
+        <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
+          <img class="social_media_icon" src="images/social_media/instagram.svg">
+        </a>
+        <a href="https://www.linkedin.com/company/peanut-king-solution-limited/mycompany/" target="_blank">
+          <img class="social_media_icon" src="images/social_media/linkedin.svg">
+        </a>
+      </li>
+		</ul> <!-- primary-nav -->
+	</nav> <!-- cd-nav -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
-
 </html>
