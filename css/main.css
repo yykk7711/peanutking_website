@@ -837,7 +837,7 @@ h4{
   height:auto;
   padding: 10%;
   background-color: #fff;
-  color: #333
+  color: #333;
 }
 
 .productDlTitle{
@@ -1164,8 +1164,26 @@ h4{
 /* ---------------CONTACT US PAGE-----------------------*/
 .sectionDivContactus{
   height:70vh;
+  background: rgba(0, 202, 255, 1);
+  background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%, rgba(0, 202, 255, 1) 100%);
+  opacity: 0.95;
 }
 .captionContactus{
   padding-top: 30vh;
+  padding-left: 10vh;
+}
+.sectionDivJoinus{
+  height:70vh;
+  background: rgba(0, 202, 255, 1);
+  background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%, rgba(0, 202, 255, 1) 100%);
+  opacity: 0.95;
+}
+.captionJoinUs {
+  /* padding-top: 20vh;
+  min-width: 50vh;
+  width: 100%;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 1); */
+  padding-top: 20vh;
   padding-left: 10vh;
 }
