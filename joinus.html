@@ -1,232 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 
 <head>
+  <link rel="icon" href="./images/Logo2.png">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
+  <!-- Navbar needed-->
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
 
+
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
   <link href="./css/main.css" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script src="./script.js"></script>
-  <title>Peanut King Solution Limited | About Us</title>
+  <title>Peanut King Solution Limited | Join Us</title>
 </head>
 
 <body style="background-color: transparent">
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" id="topbar">
-      <div class="container navbarContainer">
+  <header class="cd-main-header">
+    <a class="cd-logo" href="index.html"><img src="images/LOGO-BLACK.svg" alt="Logo" width="112.5" height="75" ></a>
 
-        <!-- ICON -->
-        <a class="navbar-brand" href="index.html" target="_top">
-          <img src="./images/LOGO-BLACK.svg" width="115" height="76" alt="">
-        </a>
-
-        <!-- ITEMS -->
-        <div class="navbarItem" id="navbarSupportedContent">
-          <!-- <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">  -->
-          <ul class="navbar-nav flex-row ml-md-auto">
-            <!-- Nav items -->
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html" target="_top">HOME</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./aboutus.html" target="_top">ABOUT US</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                PRODUCTS & SERVICES
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="product-pila.html">Robot PILA</a>
-                <a class="dropdown-item" href="#">PeanutKING Edu Kit</a>
-                <a class="dropdown-item" href="#">Ai Bit</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./joinus.html" target="_top">JOIN US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contactus.html" target="_top">CONTACT US</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- SOCIAL MEDIA -->
-        <div class="navbar-social-media" id="navbarSupportedContent">
-          <ul class="navbar-nav flex-row ml-md-auto ">
-            <li class="nav-item">
-              <a href="https://www.facebook.com/peanut.king.hk" target="_blank">
-                <img class="social_media_icon" src="./images/social_media/facebook.svg" >
-              </a>
-              <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
-                <img class="social_media_icon" src="./images/social_media/instagram.svg">
-              </a>
-              <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
-                <img class="social_media_icon" src="./images/social_media/linkedin.svg">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("topbar");
-        if (x.className == "navbar-expand-lg") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
+    <ul class="cd-header-buttons">
+      <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+    </ul> <!-- cd-header-buttons -->
   </header>
-  <div class="sectionDivJoinus">
-    <div class="captionJoinUs"style="color:white;">
-      <p style="font-size:max(3vw,40px);">Let’s work together to impact the community,
-        <br>and our future.</p>
+
+  <main class="cd-main-content">
+    <div class="sectionDivJoinus">
+      <div class="captionJoinUs"style="color:white;">
+        <p style="font-size:max(3vw,40px);">Let’s work together to impact the community,
+          <br>and our future.</p>
+      </div>
     </div>
-  </div>
-  <div class="container sectionDiv">
-    <!-- <div class="row">
-      <div class="col">
-        <p>Po</p>
-      </div>
-      <div class="col">
-        szz
-      </div>
-    </div> -->
+    <div class="container sectionDiv">
 
-    <div class="tag2">
-      <h1>Position</h1>
-      <ul class="nav nav-tabs">
-        <li class="active"><a class="nav-link" data-toggle="tab" href="#SEng">Software Engineer</a></li>
-        <li><a class="nav-link" data-toggle="tab" href="#HEng">Hardware Engineer</a></li>
-        <li><a class="nav-link" data-toggle="tab" href="#SInt">Software Engineering Intern</a></li>
-        <li><a class="nav-link" data-toggle="tab" href="#HInt">Hardware Engineering Intern</a></li>
-      </ul>
 
-      <div class="tab-content">
-        <br>
-        <div id="SEng" class="tab-pane fade in active">
-          <h2><span style="font-size: max(2vw,26px);">Software Engineer</h2>
-          <p><span style="font-size: max(1.5vw,20px);">Responsibilities:</span>
-            <ol style="font-size: max(1vw,15px);">
-              <li>Develop new algorithms to enhance performance of our products and design projects, e.g., robot kits, AI products and computer vision systems.
-              <li>Work with Teaching Team and Software team to design, implement, adjust and test the hardware of projects and flagship products.
-              <li>Benchmarking or algorithms and software performance of flagship products and projects.
-              <li>On-site code debugging for clients in projects if necessary.
-              <li>Prepare technical documents of software architecture and protocols of projects.
-              <li>Assist Teaching Team in STEM activities and projects to teenagers including material preparation and coaching.
-              <li>Implement your ideas and do R&D.
-            </ol>
-          </p>
-          <p><span style="font-size: max(1.5vw,20px);">Experience & Requirements:</span>
-            <ol style="font-size: max(1vw,15px);">
-              <li>Degree holder of Electronic Engineering, Computer Engineering, Computer Science, Information Engineering or related fields.
-              <li>A team player with collaboration skills to work in projects.
-              <li>Passions in learning, teaching teenagers, sharing knowledge and experience.
-              <li>Being self-motivated and responsible to work and communicate in a team atmosphere.
-              <li>Strong background in C, C++, Python or Java programming.
-              <li>Bonus for relevant experience in mobile Apps development, e.g., iOS / Android Apps
-              <li>Bonus for relevant experience in robotics, AI, computer vision, embedded firmware or relevant fields.
-              <li>Bonus for relevant experience in local STEM education or teaching / coaching in local STEM activities.
-              <li>Bonus if possess or pursuing PGDE or related education certificates.
-            </ol>
-          </p>
-        </div>
-        <div id="HEng" class="tab-pane fade">
-          <h2><span style="font-size: max(2vw,26px);">Hardware Engineer</h2>
-          <p><span style="font-size: max(1.5vw,20px);">Responsibilities:</span>
-            <ol style="font-size: max(1vw,15px);">
-              <li>Develop new circuitry or PCB to enhance performance of our products and design projects, e.g., robot kits, AI products and computer vision systems.
-              <li>Work with Teaching Team and Software team to design, implement, adjust and test the hardware of projects and flagship products.
-              <li>Hands-on soldering work for hardware testing and debugging.
-              <li>Prepare technical documents of hardware design and specifications of projects.
-              <li>Assist Teaching Team in STEM activities and projects to teenagers including material preparation and coaching.
-              <li>Implement your ideas and do R&D.
-            </ol>
-          </p>
-          <p><span style="font-size: max(1.5vw,20px);">Experience & Requirements:</span>
-            <ol style="font-size: max(1vw,15px);">
-              <li>Degree holder of Electronic Engineering, Computer Engineering, Computer Science, Information Engineering or related fields.
-              <li>A team player with collaboration skills to work in projects.
-              <li>Passions in learning, teaching teenagers, sharing knowledge and experience.
-              <li>Being self-motivated and responsible to work and communicate in a team atmosphere.
-              <li>Strong background in digital electronics and micro-controllers, with some understanding in analog and power electronics.
-              <li>Proficient skills in soldering and hardware debgging, e.g., using CROs and DMMs.
-              <li>Bonus for relevant experience in PCB routing tools, e.g., Altium Designer, Eagle Protel or etc.
-              <li>Bonus for relevant experience in robotics, AI, computer vision, embedded firmware or relevant fields.
-              <li>Bonus for relevant experience in local STEM education or teaching / coaching in local STEM activities.
-              <li>Bonus if possess or pursuing PGDE or related education certificates.
-            </ol>
-          </p>
-        </div>
-        <div id="SInt" class="tab-pane fade">
-          <h2><span style="font-size: max(2vw,26px);">Software Engineering Intern</h2>
-          <p><span style="font-size: max(1.5vw,20px);">Responsibilities:</span>
-            <ol style="font-size: max(1vw,15px);">
-              <li>Develop new algorithms to enhance the performance of the robot and computer vision system in our products
-              <li>Working with Teaching and Hardware teams to design, implement and test program in our flagship robotic product; adjust according to the needs of Teaching team
-              <li>Bench-marking the performance of the algorithm and software part of the product
-              <li>On-site code debugging
-              <li>Prepare the documentary of software architecture and protocol
-              <li>Assist Teaching team in preparation of the tutorial material
-              <li>Implement your idea and do R&D
-            </ol>
-          </p>
-          <p><span style="font-size: max(1.5vw,20px);">Experience & Requirements:</span>
-            <ol style="font-size: max(1vw,15px);">
-              <li>Background in Electronic Engineering, Computer Engineering, Computer Science, Electrical Engineering or related fields.
-              <li>A team player with collaboration skills to work in projects.
-              <li>Passions in learning, teaching teenagers, sharing knowledge and experience.
-              <li>Being self-motivated and responsible to work and communicate in a team atmosphere.
-              <li>Background in C, C++, Python or Java programming.
-              <li>Bonus for relevant experience in mobile Apps development, e.g., iOS / Android Apps
-              <li>Bonus for relevant experience in robotics, AI, computer vision, embedded firmware or relevant fields.
-              <li>Bonus for relevant experience in local STEM education or teaching / coaching in local STEM activities.
-            </ol>
-          </p>
-        </div>
-        <div id="HInt" class="tab-pane fade">
-          <h2><span style="font-size: max(2vw,26px);">Hardware Engineering Intern</h2>
-          <p><span style="font-size: max(1.5vw,20px);">Responsibilities:</span>
-            <ol style="font-size: max(1vw,15px);">
-              <li>Develop new circuitry or PCB to enhance the performance of the robot and computer vision system in our products
-              <li>Working with Teaching and Software team to design, implement and test the hardware in our flagship robotic product; adjust according to the needs of Teaching team
-              <li>Hands-on soldering work for testing and debugging
-              <li>Prepare the documentary of hardware design and specifications
-              <li>Assist Teaching team in preparation of the tutorial material
-              <li>Implement your idea and do R&D
-            </ol>
-          </p>
-          <p><span style="font-size: max(1.5vw,20px);">Experience & Requirements:</span>
-            <ol style="font-size: max(1vw,15px);">
-              <li>Background in Electrical Engineering, Electronic Engineering, Computer Engineering, Computer Science or related fields.
-              <li>A team player with collaboration skills to work in projects.
-              <li>Passions in learning, teaching teenagers, sharing knowledge and experience.
-              <li>Being self-motivated and responsible to work and communicate in a team atmosphere.
-              <li>Background in digital electronics and micro-controllers, with some understanding in analog and power electronics.
-              <li>Proficient skills in soldering and hardware debugging, e.g., using CROs and DMMs.
-              <li>Bonus for relevant experience in PCB routing tools, e.g., Altium Designer, Eagle Protel or etc.
-              <li>Bonus for relevant experience in robotics, AI, computer vision, embedded firmware or relevant fields.
-              <li>Bonus for relevant experience in local STEM education or teaching / coaching in local STEM activities.
-            </ol>
-          </p>
+      <div class="">
+        <h1>Position</h1>
+        <ul class="nav nav-tabs">
+          <li class="active"><a class="nav-link" data-toggle="tab" href="#SEng">Software Engineer</a></li>
+          <li><a class="nav-link" data-toggle="tab" href="#HEng">Hardware Engineer</a></li>
+          <li><a class="nav-link" data-toggle="tab" href="#SInt">Software Engineering Intern</a></li>
+          <li><a class="nav-link" data-toggle="tab" href="#HInt">Hardware Engineering Intern</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <br>
+          <div id="SEng" class="tab-pane fade in active">
+            <h2><span style="font-size: max(2vw,26px);">Software Engineer</h2>
+            <p><span style="font-size: max(1.5vw,20px);">Responsibilities:</span>
+              <ol style="font-size: max(1vw,15px);">
+                <li>Develop new algorithms to enhance performance of our products and design projects, e.g., robot kits, AI products and computer vision systems.
+                <li>Work with Teaching Team and Software team to design, implement, adjust and test the hardware of projects and flagship products.
+                <li>Benchmarking or algorithms and software performance of flagship products and projects.
+                <li>On-site code debugging for clients in projects if necessary.
+                <li>Prepare technical documents of software architecture and protocols of projects.
+                <li>Assist Teaching Team in STEM activities and projects to teenagers including material preparation and coaching.
+                <li>Implement your ideas and do R&D.
+              </ol>
+            </p>
+            <p><span style="font-size: max(1.5vw,20px);">Experience & Requirements:</span>
+              <ol style="font-size: max(1vw,15px);">
+                <li>Degree holder of Electronic Engineering, Computer Engineering, Computer Science, Information Engineering or related fields.
+                <li>A team player with collaboration skills to work in projects.
+                <li>Passions in learning, teaching teenagers, sharing knowledge and experience.
+                <li>Being self-motivated and responsible to work and communicate in a team atmosphere.
+                <li>Strong background in C, C++, Python or Java programming.
+                <li>Bonus for relevant experience in mobile Apps development, e.g., iOS / Android Apps
+                <li>Bonus for relevant experience in robotics, AI, computer vision, embedded firmware or relevant fields.
+                <li>Bonus for relevant experience in local STEM education or teaching / coaching in local STEM activities.
+                <li>Bonus if possess or pursuing PGDE or related education certificates.
+              </ol>
+            </p>
+          </div>
+          <div id="HEng" class="tab-pane fade">
+            <h2><span style="font-size: max(2vw,26px);">Hardware Engineer</h2>
+            <p><span style="font-size: max(1.5vw,20px);">Responsibilities:</span>
+              <ol style="font-size: max(1vw,15px);">
+                <li>Develop new circuitry or PCB to enhance performance of our products and design projects, e.g., robot kits, AI products and computer vision systems.
+                <li>Work with Teaching Team and Software team to design, implement, adjust and test the hardware of projects and flagship products.
+                <li>Hands-on soldering work for hardware testing and debugging.
+                <li>Prepare technical documents of hardware design and specifications of projects.
+                <li>Assist Teaching Team in STEM activities and projects to teenagers including material preparation and coaching.
+                <li>Implement your ideas and do R&D.
+              </ol>
+            </p>
+            <p><span style="font-size: max(1.5vw,20px);">Experience & Requirements:</span>
+              <ol style="font-size: max(1vw,15px);">
+                <li>Degree holder of Electronic Engineering, Computer Engineering, Computer Science, Information Engineering or related fields.
+                <li>A team player with collaboration skills to work in projects.
+                <li>Passions in learning, teaching teenagers, sharing knowledge and experience.
+                <li>Being self-motivated and responsible to work and communicate in a team atmosphere.
+                <li>Strong background in digital electronics and micro-controllers, with some understanding in analog and power electronics.
+                <li>Proficient skills in soldering and hardware debgging, e.g., using CROs and DMMs.
+                <li>Bonus for relevant experience in PCB routing tools, e.g., Altium Designer, Eagle Protel or etc.
+                <li>Bonus for relevant experience in robotics, AI, computer vision, embedded firmware or relevant fields.
+                <li>Bonus for relevant experience in local STEM education or teaching / coaching in local STEM activities.
+                <li>Bonus if possess or pursuing PGDE or related education certificates.
+              </ol>
+            </p>
+          </div>
+          <div id="SInt" class="tab-pane fade">
+            <h2><span style="font-size: max(2vw,26px);">Software Engineering Intern</h2>
+            <p><span style="font-size: max(1.5vw,20px);">Responsibilities:</span>
+              <ol style="font-size: max(1vw,15px);">
+                <li>Develop new algorithms to enhance the performance of the robot and computer vision system in our products
+                <li>Working with Teaching and Hardware teams to design, implement and test program in our flagship robotic product; adjust according to the needs of Teaching team
+                <li>Bench-marking the performance of the algorithm and software part of the product
+                <li>On-site code debugging
+                <li>Prepare the documentary of software architecture and protocol
+                <li>Assist Teaching team in preparation of the tutorial material
+                <li>Implement your idea and do R&D
+              </ol>
+            </p>
+            <p><span style="font-size: max(1.5vw,20px);">Experience & Requirements:</span>
+              <ol style="font-size: max(1vw,15px);">
+                <li>Background in Electronic Engineering, Computer Engineering, Computer Science, Electrical Engineering or related fields.
+                <li>A team player with collaboration skills to work in projects.
+                <li>Passions in learning, teaching teenagers, sharing knowledge and experience.
+                <li>Being self-motivated and responsible to work and communicate in a team atmosphere.
+                <li>Background in C, C++, Python or Java programming.
+                <li>Bonus for relevant experience in mobile Apps development, e.g., iOS / Android Apps
+                <li>Bonus for relevant experience in robotics, AI, computer vision, embedded firmware or relevant fields.
+                <li>Bonus for relevant experience in local STEM education or teaching / coaching in local STEM activities.
+              </ol>
+            </p>
+          </div>
+          <div id="HInt" class="tab-pane fade">
+            <h2><span style="font-size: max(2vw,26px);">Hardware Engineering Intern</h2>
+            <p><span style="font-size: max(1.5vw,20px);">Responsibilities:</span>
+              <ol style="font-size: max(1vw,15px);">
+                <li>Develop new circuitry or PCB to enhance the performance of the robot and computer vision system in our products
+                <li>Working with Teaching and Software team to design, implement and test the hardware in our flagship robotic product; adjust according to the needs of Teaching team
+                <li>Hands-on soldering work for testing and debugging
+                <li>Prepare the documentary of hardware design and specifications
+                <li>Assist Teaching team in preparation of the tutorial material
+                <li>Implement your idea and do R&D
+              </ol>
+            </p>
+            <p><span style="font-size: max(1.5vw,20px);">Experience & Requirements:</span>
+              <ol style="font-size: max(1vw,15px);">
+                <li>Background in Electrical Engineering, Electronic Engineering, Computer Engineering, Computer Science or related fields.
+                <li>A team player with collaboration skills to work in projects.
+                <li>Passions in learning, teaching teenagers, sharing knowledge and experience.
+                <li>Being self-motivated and responsible to work and communicate in a team atmosphere.
+                <li>Background in digital electronics and micro-controllers, with some understanding in analog and power electronics.
+                <li>Proficient skills in soldering and hardware debugging, e.g., using CROs and DMMs.
+                <li>Bonus for relevant experience in PCB routing tools, e.g., Altium Designer, Eagle Protel or etc.
+                <li>Bonus for relevant experience in robotics, AI, computer vision, embedded firmware or relevant fields.
+                <li>Bonus for relevant experience in local STEM education or teaching / coaching in local STEM activities.
+              </ol>
+            </p>
+          </div>
         </div>
       </div>
     </div>
+  </main>
+  <nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li class="has-children">
+				<a href="#0">PRODUCTS</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<!-- <li class="see-all"><a href="#0">Browse Services</a></li> -->
+          <li>
+						<a class="cd-nav-item item-1" href="product-pila.html">
+							<h3>Robot PILA</h3>
+							<p>Professional Soccer Robot for beginners</p>
+						</a>
+					</li>
+          <li>
+						<a class="cd-nav-item item-2" href="#0">
+							<h3>AiBit</h3>
+							<p>First micro:bit- compatible AI development Kit for beginners</p>
+						</a>
+					</li>
+          <li>
+						<a class="cd-nav-item item-3" href="#0">
+							<h3>EDU Kit</h3>
+							<p>STEM Learning Kit designed for local teens</p>
+						</a>
+					</li>
+				</ul>
+			</li>
 
-  </div>
+			<li class="has-children">
+				<a href="#0">SERVICES</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<!-- <li class="see-all"><a href="#0">Browse Services</a></li> -->
+          <li>
+						<a class="cd-nav-item item-1" href="./services/STEM-education-service.html">
+							<h3>STEM Education Service</h3>
+							<p>Nurture our future, motivate our teens</p>
+						</a>
+					</li>
+					<li>
+						<a class="cd-nav-item item-2" href="./services/design-consultant-service.html">
+							<h3>Inno-Tech Solution Consultance</h3>
+							<p>Turn your ideas into products</p>
+						</a>
+					</li>
+				</ul>
+			</li>
+      <li><a href="#0">JOIN US</a></li>
+			<li><a href="./contactus.html">CONTACT US</a></li>
+      <li>
+        <a href="https://www.facebook.com/peanut.king.hk" target="_blank">
+          <img class="social_media_icon" src="images/social_media/facebook.svg" >
+        </a>
+        <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
+          <img class="social_media_icon" src="images/social_media/instagram.svg">
+        </a>
+        <a href="https://www.linkedin.com/company/peanut-king-solution-limited/mycompany/" target="_blank">
+          <img class="social_media_icon" src="images/social_media/linkedin.svg">
+        </a>
+      </li>
+		</ul> <!-- primary-nav -->
+	</nav> <!-- cd-nav -->
 </body>
