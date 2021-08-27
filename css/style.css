@@ -6,7 +6,6 @@ Primary style
 *, *::after, *::before {
   box-sizing: border-box;
 }
-
 html {
   /* font-size: 62.5%; */
 }
@@ -394,7 +393,7 @@ Main components
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   border-bottom: 1px solid #3a3f40;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -1071,4 +1070,55 @@ support for no js
   .no-js .nav-is-fixed .cd-primary-nav {
     position: fixed;
   }
+}
+
+@media screen and (max-width: 1000px) {
+  /* Service */
+  .stem_column{
+    width: 100%;
+  }
+  .edu_col1{
+    width: 100%;
+  }
+  .edu_title{
+    padding: 0px;
+    padding-left: 5vh;
+    font-size: 50px;
+  }
+  .edu_slogan{
+    font-size: 15px;
+  }
+
+  .edu_col2{
+    display: none;
+  }
+  .sectionDivEdu{
+    min-height: 40vh;
+  }
+  .overview-item{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .overview-div{
+    margin: auto;
+  }
+  .ser_col{
+    width: 100%;
+  }
+  .course_row{
+    flex-direction: column-reverse;
+  }
+  .ser_photo{
+    padding-left: 0px;
+    padding-bottom: 15px;
+  }
+  .sectionDivSer{
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  .ser_brief {
+    padding-bottom: 10px;
+  }
+
 }
