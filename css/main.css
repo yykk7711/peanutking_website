@@ -162,7 +162,7 @@ h4{
   width: 100%;
   margin-top: 60px;
   z-index: 10;
-  background-color: rgba(0,0,0,0);;
+  background-color: rgba(0,0,0,0);
 }
 
 .index-cover{
@@ -324,7 +324,7 @@ h4{
 
 .blogTitle {
   color: rgba(0,0,0,0.800000011920929);
-  font-family: Montserrat;
+
   font-weight: Bold;
   font-size: 18px;
   opacity: 1;
@@ -334,7 +334,7 @@ h4{
 /* Blog content */
 .blogContent {
   color: rgba(0,0,0,0.800000011920929);
-  font-family: Montserrat;
+
   font-weight: Regular;
   font-size: 16px;
   opacity: 1;
@@ -403,7 +403,7 @@ h4{
     }
     .clientsImg{
       height: 200px;
-      width: 120px;
+      width: 150px;
       text-align: center;
     }
     #img1{
@@ -962,12 +962,14 @@ h4{
 .ser_target_content{
   font-size: 20px;
 }
+/* .ser_target_content{
+  font-size: 20px;
+} */
 
 @media screen and (max-width: 1000px) {
   .stem_column{
     width: 100%;
   }
-
   .edu_col1{
     width: 100%;
   }
@@ -1120,7 +1122,9 @@ h4{
   font-size: 30px;
 }
 .design_title{
-
+  color: white ;
+  padding-top: 20vh;
+  padding-left: 20vh;
 }
 .design_description{
 
