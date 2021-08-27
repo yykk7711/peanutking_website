@@ -1072,3 +1072,61 @@ support for no js
     position: fixed;
   }
 }
+
+.sectionDivJoinus{
+  height:70vh;
+  background: rgba(0, 202, 255, 1);
+  background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%, rgba(0, 202, 255, 1) 100%);
+  opacity: 0.95;
+}
+
+@media screen and (max-width: 1000px) {
+  .stem_column{
+    width: 100%;
+  }
+
+  .edu_col1{
+    width: 100%;
+  }
+  .edu_title{
+    padding: 0px;
+    padding-left: 5vh;
+    font-size: 50px;
+  }
+  .edu_slogan{
+    font-size: 15px;
+  }
+
+  .edu_col2{
+    display: none;
+  }
+  .sectionDivEdu{
+    min-height: 40vh;
+  }
+  .overview-item{
+    width: 100% !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .overview-div{
+
+    margin: 0 !important;
+  }
+  .ser_col{
+    width: 100%;
+  }
+  .course_row{
+    flex-direction: column-reverse;
+  }
+  .ser_photo{
+    padding-left: 0px;
+    padding-bottom: 15px;
+  }
+  .sectionDivSer{
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  .ser_brief {
+    padding-bottom: 10px;
+  }
+}
