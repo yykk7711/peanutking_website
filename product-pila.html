@@ -33,14 +33,14 @@
     </ul> <!-- cd-header-buttons -->
   </header>
 
-  <main class="cd-main-content" style="min-width:1300px;">
+  <main class="cd-main-content">
     <div>
       <div class="row productBar">
         <!-- <div class="col"></div> -->
-        <div class="col" style="text-align:left;">
+        <div class="col-3 barflex" id="robotpila">
           <a style="font-weight:bold; color:#ddd;">Robot PILA</a>
         </div>
-        <div class="col" style="text-align:right;">
+        <div class="col-9 barflex" id="navpila">
           <nav>
           <button type="button" href="" class="productBookmarks" onclick="functionforscroll('overview')">Overview</button> |
           <button type="button" href="" class="productBookmarks" onclick="functionforscroll('spec')">Specifications</button> |
@@ -52,8 +52,8 @@
 
     <div class="banner pilaBanner">
       <div class="row">
-        <div class="col-6 productHeader">
-          <p style="font-size:max(3vw,40px);">
+        <div class="col-6 productHeader headerflex">
+          <p>
             First-ever
             <br>soccer match ready
             <!-- <br>RCJ competition ready -->
@@ -64,8 +64,8 @@
       </div>
     </div>
 
-    <div id="overview" class="banner pilaAdv" style="min-height: 50vh;">
-      <div class="row">
+    <div id="overview" class="banner pilaAdv">
+      <div class="row justify-content-center">
         <div class="col-6 productDes" style="padding-top: 10%;">
           <p>
             <span style="font-size:2.5em; font-weight:bold;">Robot PILA</span>
@@ -83,7 +83,7 @@
     </div>
 
     <div class=" banner pilaFeature1">
-      <div class="row">
+      <div class="row justify-content-center colReverse">
         <div class="col-6 productTitle" >
           <img src="images/v3_0.png" class="img-responsive productFeatureImg" alt="..." width="100%" height="auto">
           <!-- <p style="padding-top:5%;">Integrated design</p> -->
@@ -117,7 +117,7 @@
     </div>
 
     <div class=" banner pilaFeature3">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center colReverse">
         <div class="col-6 productTitle">
           <img src="images/v3_1.png" class="img-responsive productFeatureImg" alt="..." width="100%" height="auto">
           <!-- <p style="padding-top:5%;">Carbon Fibre Chassis</p> -->
@@ -135,7 +135,7 @@
       <div class="row">
 
         <div class="col productSpecTitle">
-          <p style="font-size: max(3vw,45px)">SPECIFICATIONS</p>
+          <p style="font-size:1.8em;">SPECIFICATIONS</p>
           <hr color="#ccc">
         </div>
 
@@ -145,17 +145,15 @@
           <p>Box-set contains:</p>
         </div>
         <div class="col-7 productSpecDes">
-          <p>DC motors
-            <br>Omni-wheels
-            <br>Carbon fibre chassis
-            <br>USB-A Cable
-            <br>PILA Shields (Included colour sensors, infrared sensors)
-            <br>Compass Module
-            <br>Ultrasonic Sensors
-            <br>Screws and Nuts
-            <br>Rechargeable Battery with Charger
-          </p>
-          </a>
+            <li>DC motors
+            <li>Omni-wheels
+            <li>Carbon fibre chassis
+            <li>USB-A Cable
+            <li>PILA Shields (Included colour sensors, infrared sensors)
+            <li>Compass Module
+            <li>Ultrasonic Sensors
+            <li>Screws and Nuts
+            <li>Rechargeable Battery with Charger
         </div>
       </div>
 
@@ -166,8 +164,8 @@
             <p>Size and Weight:</p>
         </div>
         <div class="col-7 productSpecDes">
-          <p>Robot Dimensions: 200mm x 200mm x 200mm
-          <br>Robot Net Weight 1090g</p>
+          <li>Robot Dimensions: 200mm x 200mm x 200mm
+          <li>Robot Net Weight 1090g
         </div>
       </div>
 
@@ -182,7 +180,8 @@
     </div>
 
     <div id="download" class="productDl">
-      <div class="row productDlTitle" style="font-size: max(3vw,45px);">Resources & Downloads</div>
+      <div class="row productDlTitle">
+        <p style="font-size:1.8em;">Resources & Downloads</p></div>
       <hr color="#333">
       <div class="row">
         <!-- <div class="col-5 productDlTitle">Library:</div>

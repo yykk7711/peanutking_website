@@ -738,6 +738,7 @@ h4{
   background-position: bottom right;
   background-attachment: initial;
   /* object-fit: contain; */
+  font-size:max(3vw,40px);
 }
 
 .productHeader{
@@ -755,6 +756,7 @@ h4{
   padding: 12px 5% 12px;
   /* margin: 0; */
 }
+
 
 .productBookmarks{
   background-color: #333;
@@ -821,8 +823,66 @@ h4{
 .productDes{
   /* position: relative; */
   /* padding-top: 20%; */
-  font-size: max(1.5vw,20px);
+  font-size: max(1.4vw,18px);
 }
+
+@media screen and (max-width: 1000px) {
+  .productDes{
+    flex: 100%;
+    max-width:100%;
+    padding-bottom: 10%;
+  }
+  .productTitle{
+    flex: 100%;
+    max-width:90%;
+    padding-bottom: 10%;
+  }
+  .colReverse{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .pilaBanner{
+    min-height: 500px;
+    height:500px;
+    font-size:max(2vw,25px);
+  }
+}
+
+#robotpila{
+  text-align:left;
+}
+#navpila{
+  text-align:right;
+}
+
+@media screen and (max-width: 750px) {
+  .headerflex{
+    flex: 100%;
+    max-width:100%;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .barflex{
+    flex: 100%;
+    max-width:100%;
+    align-items: center;
+    text-align: center;
+  }
+  .productDes, .productTitle, .productSpecTitle, .productSpecDes, .productDlTitle, .productDlDes{
+    font-size: 0.8em !important;
+  }
+  #robotpila{
+    text-align:center;
+  }
+  #navpila{
+    text-align:center;
+  }
+  .productBar{
+    padding: 12px 0% 12px;
+  }
+}
+
 
 .productSpec{
   background-color: #333;
@@ -832,14 +892,14 @@ h4{
 }
 
 .productSpecTitle{
-  font-size: max(2vw,30px);
+  font-size: max(1.4vw,18px);
   font-weight: bold;
 }
 
 .productSpecDes{
   color: #ccc;
   /* padding-top:10px; */
-  font-size: max(1.5vw,20px);
+  font-size: max(1.2vw,16px);
 }
 
 .productDl{
@@ -850,13 +910,20 @@ h4{
 }
 
 .productDlTitle{
-  font-size: max(2vw,30px);
+  font-size: max(1.4vw,18px);
   font-weight: bold;
 }
 
 .productDlDes{
   /* padding-top:10px; */
-  font-size: max(1.5vw,20px);
+  font-size: max(1.2vw,16px);
+}
+
+@media screen and (max-width: 560px){
+  .productSpecTitle, .productSpecDes, .productDlTitle, .productDlDes{
+    flex:100%;
+    max-width: 100%;
+  }
 }
 
 /* services page-----------------------------------------------------------------*/
