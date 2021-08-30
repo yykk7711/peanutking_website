@@ -84,11 +84,36 @@ a{
   min-height: 30vh;
 }
 
+/* ----------------------- joinus page -----------------------------*/
 .captionJoinUs {
   font-weight: bolder;
   color: rgba(255, 255, 255, 1);
-  padding-top: 20vh;
+  padding-top: 15%;
   padding-left: 10vh;
+  padding-right: 10vh;
+  font-size:max(3vw,34px);
+}
+
+.sectionDivJoinus{
+  height:70vh;
+  background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%, rgba(0, 202, 255, 1) 100%);
+  opacity: 0.95;
+}
+
+.joinuspost{
+  font-size: max(2vw,26px);
+}
+
+.joinustitle{
+  font-size: max(1.5vw,20px);
+}
+
+.joinusdes{
+  font-size: max(1vw,15px);
+}
+
+#joinusposition{
+  font-size: 2.2em;
 }
 
 .captionText{
@@ -182,11 +207,6 @@ h4{
   width: 180px;
 }
 
-@media screen and (max-width: 1200px){
-  .captionJoinUs{
-    display: none;
-  }
-}
 .fade-in-image {
   animation: fadeIn 5s;
   -webkit-animation: fadeIn 5s;
@@ -367,9 +387,24 @@ h4{
 }
 @media screen and (max-width: 1000px) {
     .captionJoinUs{
-      padding-top: 5vh;
       flex: 100%;
       max-width:100%;
+      font-size: max(3vw,22px);
+    }
+    .sectionDivJoinus{
+      height: auto;
+      padding-bottom: 15%;
+    }
+    .joinuspost{
+      font-size: max(3vw,22px);
+    }
+
+    .joinustitle{
+      font-size: max(2vw,18px);
+    }
+
+    .joinusdes{
+      font-size: max(1vw,14px);
     }
     .cover_text1{
       padding-left: 5vh;
@@ -420,6 +455,37 @@ h4{
       width: 100px;
     }
 }
+
+
+@media screen and (max-width: 700px) {
+  .captionJoinUs{
+    flex: 100%;
+    max-width:100%;
+    font-size: max(3vw,15px);
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+  .sectionDivJoinus{
+    height: auto;
+    padding-bottom: 15%;
+  }
+  .joinuspost{
+    font-size: max(3vw,20px);
+  }
+
+  .joinustitle{
+    font-size: max(2vw,16px);
+  }
+
+  .joinusdes{
+    font-size: max(1vw,12px);
+  }
+  #joinusposition{
+    font-size: 1.8em;
+  }
+}
+
+
 
 #learnMore {
   margin-left: auto;
@@ -855,7 +921,7 @@ h4{
   text-align:right;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
   .headerflex{
     flex: 100%;
     max-width:100%;
@@ -1252,10 +1318,4 @@ h4{
 .captionContactus{
   padding-top: 30vh;
   padding-left: 10vh;
-}
-.sectionDivJoinus{
-  height:70vh;
-  background: rgba(0, 202, 255, 1);
-  background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%, rgba(0, 202, 255, 1) 100%);
-  opacity: 0.95;
 }
