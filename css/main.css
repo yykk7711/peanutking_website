@@ -91,10 +91,10 @@ a {
 .captionJoinUs {
   font-weight: bolder;
   color: rgba(255, 255, 255, 1);
-  padding-top: 15%;
+  padding-top: 20vh;
   padding-left: 10vh;
   padding-right: 10vh;
-  font-size: max(3vw, 34px);
+  font-size: max(2.5vw, 34px);
 }
 
 .sectionDivJoinus {
@@ -423,6 +423,7 @@ h4 {
     flex: 100%;
     max-width: 100%;
     font-size: max(3vw, 22px);
+    padding-top: 15%;
   }
 
   .sectionDivJoinus {
@@ -1408,6 +1409,22 @@ h4 {
 }
 
 .captionContactus {
-  padding-top: 30vh;
+  padding-top: 25vh;
   padding-left: 10vh;
+}
+
+.ContactUsText{
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .sectionDivContactus {
+    height: 40vh;
+    max-width: 100%;
+    font-size: max(3vw, 22px);
+  }
+  .captionContactus {
+    padding-top: 15vh;
+    padding-left: 15vw;
+  }
 }
