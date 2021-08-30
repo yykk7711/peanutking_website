@@ -10,6 +10,7 @@
   <!-- Navbar needed-->
   <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
   <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <script src="js/jquery-2.1.1.js"></script>
   <script src="js/modernizr.js"></script> <!-- Modernizr -->
   <script src="js/jquery.mobile.custom.min.js"></script>
   <script src="js/main.js"></script> <!-- Resource jQuery -->
@@ -32,7 +33,8 @@
       <li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
     </ul> <!-- cd-header-buttons -->
   </header>
-    <main class="cd-main-content">
+
+  <main class="cd-main-content">
     <div class="sectionDivContactus">
       <div class="text-left captionContactus">
         <h1 class="ContactUsText">Contact Us</h1>
@@ -125,9 +127,8 @@
               var body = {
                 email: formEmail,
                 subject: "Infomation request from Peanut King website",
-                message: "From:" + formName + "/n" + "Contact: " + formContact + "/n"
-                + "Service: " + formService + "/n" + "Message: " + formMessage
-
+                message: "From: " + formName + "\n" + "Contact: " + formContact + "\n" +
+                         "Service: " + formService + "\n" + "Message: " + formMessage + "\n"
               }
 
               // Here, we instantiate our Request. This is a special object used by the Fetch API so it knows where to send data, what data to send, and how to send it.
@@ -145,64 +146,74 @@
                 .catch(err => console.log(err));
             }
           </script>
-          <!-- <form action="php/test.php" class="mb-5" method="POST" id="contactForm" name="contactForm">
-            <div class="row">
-              <div class="col-md-12 form-group">
-                <label for="name" class="col-form-label">Name</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="(Required)">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12 form-group">
-                <label for="email" class="col-form-label">Email</label>
-                <input type="text" class="form-control" name="email" id="email" placeholder="(Required)">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12 form-group">
-                <label for="contact" class="col-form-label">Contact Number</label>
-                <input type="text" class="form-control" name="contact" id="contact" placeholder="(Required)">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12 form-group">
-                <label for="interested" class="col-form-label">Which service(s) are you interested?</label>
-                <select class="form-control" name="service" id="interest">
-                  <option value = "---">---</option>
-                  <option value = "STEM education service">STEM education service</option>
-                  <option value = "STEM products">STEM products</option>
-                  <option value = "Design consultant service">Design consultant service</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12 form-group">
-                <label for="message" class="col-form-label">How could we help?</label>
-                <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="(Required)"></textarea>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12">
-                <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
-                <span class="submitting"></span>
-              </div>
-            </div>
-          </form> -->
-
-          <!-- <div id="form-message-warning mt-4"></div>
-          <div id="form-message-success" style="">
-            Your message was sent, thank you!
-          </div> -->
         </div>
       </div>
-  </div>
+    </div>
     <iframe id="footerDiv" src="footer.html" width="100%" height="300px" scrolling="no" frameborder="no" allowTransparency="true"></iframe>
   </main>
-</body>
+  <nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="aboutus.html">ABOUT US</a></li>
+      <li class="has-children">
+				<a href="#0">PRODUCTS</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<!-- <li class="see-all"><a href="#0">Browse Services</a></li> -->
+          <li>
+						<a class="cd-nav-item item-1" href="product-pila.html">
+							<h3>Robot PILA</h3>
+							<p>Professional Soccer Robot for beginners</p>
+						</a>
+					</li>
+          <li>
+						<a class="cd-nav-item item-2" href="#0">
+							<h3>AiBit</h3>
+							<p>First micro:bit- compatible AI development Kit for beginners</p>
+						</a>
+					</li>
+          <li>
+						<a class="cd-nav-item item-3" href="#0">
+							<h3>EDU Kit</h3>
+							<p>STEM Learning Kit designed for local teens</p>
+						</a>
+					</li>
+				</ul>
+			</li>
 
+			<li class="has-children">
+				<a href="#0">SERVICES</a>
+				<ul class="cd-nav-icons is-hidden">
+					<li class="go-back"><a href="#0">Menu</a></li>
+					<!-- <li class="see-all"><a href="#0">Browse Services</a></li> -->
+          <li>
+						<a class="cd-nav-item item-1" href="./services/STEM-education-service.html">
+							<h3>STEM Education Service</h3>
+							<p>Nurture our future, motivate our teens</p>
+						</a>
+					</li>
+					<li>
+						<a class="cd-nav-item item-2" href="./services/design-consultant-service.html">
+							<h3>Inno-Tech Solution Consultance</h3>
+							<p>Turn your ideas into products</p>
+						</a>
+					</li>
+				</ul>
+			</li>
+      <li><a href="./joinus.html">JOIN US</a></li>
+			<li><a href="./contactus.html">CONTACT US</a></li>
+      <li>
+        <a href="https://www.facebook.com/peanut.king.hk" target="_blank">
+          <img class="social_media_icon" src="images/social_media/facebook.svg" >
+        </a>
+        <a href="https://www.instagram.com/peanut.king.hk/" target="_blank">
+          <img class="social_media_icon" src="images/social_media/instagram.svg">
+        </a>
+        <a href="https://www.linkedin.com/company/peanut-king-solution-limited/mycompany/" target="_blank">
+          <img class="social_media_icon" src="images/social_media/linkedin.svg">
+        </a>
+      </li>
+		</ul> <!-- primary-nav -->
+	</nav> <!-- cd-nav -->
+</body>
 </html>
