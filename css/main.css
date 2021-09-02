@@ -89,7 +89,7 @@ a {
 
 /* ----------------------- joinus page -----------------------------*/
 .captionJoinUs {
-  font-weight: bolder;
+  /* font-weight: bolder; */
   color: rgba(255, 255, 255, 1);
   padding-top: 20vh;
   padding-left: 10vh;
@@ -678,6 +678,16 @@ h4 {
   padding-top: 5.5%;
 }
 
+@media screen and (max-width: 770px) {
+  .vision {
+    flex-direction: column-reverse;
+  }
+  .visiondes{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .about-us {
     position: relative;
@@ -708,10 +718,6 @@ h4 {
     transform: translate(0, 0);
   }
 
-  .vision {
-    flex-direction: column-reverse;
-  }
-
   .lead {
     font-size: 17px;
   }
@@ -727,7 +733,35 @@ h4 {
   .my-3 {
     padding-bottom: 5vh;
   }
+
+
 }
+
+@media screen and (max-width: 991px){
+  .sloganTextDiv{
+    flex: 100%;
+    max-width: 100%;
+  }
+  .productDescriptionText{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .sloganTextDiv{
+    flex: 100%;
+    max-width: 100%;
+  }
+  .productDescriptionText{
+    flex: 100%;
+    max-width: 100%;
+  }
+  .lead{
+    font-size: 14px;
+  }
+}
+
 
 .productImg {
   margin-left: auto;
@@ -776,12 +810,24 @@ h4 {
 
 .videoDiv {
   text-align: center;
+  width: 100%;
+  height: calc(100vw*0.5625);
+  box-sizing: border-box;
+  position: relative;
 }
 
 .video {
-  width: 90%;
-  height: 60vh;
+  width: 100%;
+  height:100%;
 }
+
+@media screen and (max-width: 500px){
+  .videoDiv{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 
 /* nav bar -----------------------------------------------------------------*/
 .cd-primary-nav {
@@ -843,6 +889,24 @@ h4 {
   text-align: center;
   font-family: Montserrat;
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.4)), url('../images/P_20200118_110445.jpg') no-repeat fixed;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  /* padding: auto; */
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  background-position: bottom right;
+  background-attachment: initial;
+  /* object-fit: contain; */
+  font-size: max(3vw, 40px);
+}
+
+.edukitBanner {
+  width: 100%;
+  height: 100%;
+  min-height: 900px;
+  text-align: center;
+  font-family: Montserrat;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.6)), url('../images/edukitbanner.jpg') no-repeat fixed;
   /* background-attachment: fixed; */
   background-size: cover;
   /* padding: auto; */
@@ -920,6 +984,45 @@ h4 {
   opacity: 0.95;
 }
 
+.edukitAdv {
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: Montserrat;
+  background-color: #fff;
+  color: black;
+}
+
+.edukitFeature1 {
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: Montserrat;
+  background-color: #333;
+  background: linear-gradient(135deg, #000 0%, #797979 100%);
+  opacity: 0.95;
+}
+
+.edukitFeature2 {
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: Montserrat;
+  background: rgba(0, 202, 255, 1);
+  background: linear-gradient(135deg, rgba(0, 50, 200, 0.8) 0%, rgba(0, 202, 255, 1) 100%);
+  opacity: 0.95;
+}
+
+.edukitFeature3 {
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: Montserrat;
+  background: #3d7a37;
+  background: linear-gradient(135deg, #c86f1a 0%, #c64dd1 100%);
+  opacity: 0.95;
+}
+
 .productFeatureImg {
   margin-left: auto;
   margin-right: auto;
@@ -964,13 +1067,22 @@ h4 {
     height: 500px;
     font-size: max(2vw, 25px);
   }
+  .edukitBanner {
+    min-height: 500px;
+    height: 500px;
+    font-size: max(2vw, 25px);
+  }
 }
 
 #robotpila {
   text-align: left;
 }
 
-#navpila {
+#edukit {
+  text-align: left;
+}
+
+#productnav {
   text-align: right;
 }
 
@@ -997,7 +1109,11 @@ h4 {
     text-align: center;
   }
 
-  #navpila {
+  #edukit {
+    text-align: center;
+  }
+
+  #productnav {
     text-align: center;
   }
 
